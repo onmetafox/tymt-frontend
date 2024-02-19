@@ -1,0 +1,43 @@
+.nav-color{
+    color: #7C7C7C;
+}
+.main-color{
+    color:#EF4444;
+}
+.white-color{
+    color: white;
+}
+.grey-color{
+    color: #7C7C7C;
+}
+.blue-color{
+    color: #52E1F2;   
+}
+
+.about-span-color{
+    color:#FFFFFF
+}
+
+.future-milestone-color{
+    color:#FFD966
+}
+.success-color{
+    color:#10D10C
+}
+.hover-white-color{
+    color: white;
+}
+
+.hover-white-color:hover{
+    color: #EF4444;
+    cursor: pointer;
+}
+
+.hover-main-color{
+    color: #7C7C7C;
+}
+
+.hover-main-color:hover{
+    color: #EF4444;
+    cursor: pointer;
+}
