@@ -3,7 +3,7 @@ import "../styles/styles.css";
 import "../styles/font.css";
 import "../styles/colors.css";
 import solarImage from "../assets/images/temp-img.svg";
-import tempImg from "../assets/images/temp-img-sm.svg";
+// import tempImg from "../assets/images/temp-img-sm.svg";
 import Download from "../components/DownCmp";
 const Home = () => {
     return(

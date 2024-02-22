@@ -3,7 +3,7 @@ import "../styles/styles.css";
 import { useNavigate } from "react-router-dom";
 import Download from "../components/DownCmp";
 import logo from "../assets/logos/logo-transp.png";
-import available from "../assets/images/availe.svg";
+// import available from "../assets/images/availe.svg";
 import available_mobile from "../assets/images/available-mobile.svg";
 
 
