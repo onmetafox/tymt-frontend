@@ -3074,7 +3074,7 @@ input[type=range]:focus::-ms-fill-upper {
         background-image: url("../assets/images/temp-bg.svg");
         position: absolute;
         width: 100vw;
-        height: 750px;
+        height: 830px;
         background-repeat: no-repeat;
         background-size: cover;
         left: 0;
