@@ -22,7 +22,7 @@ const Header = () =>{
                     </div>   
                     <div className="dropdown">
                         <div className="action-button download-button fc-m2">
-                            Install and Plan now
+                            Install and Play now
                         </div>
                         <div className="dropdown-content">
                             <Download />

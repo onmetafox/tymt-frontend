@@ -26,7 +26,7 @@ const Home = () => {
                         </p>
                         <div className="dropdown">
                             <div className="action-button download-button fc-m2">
-                                <span>Install and Plan now</span>
+                                <span>Install and Play now</span>
                             </div>
                             <div className="dropdown-content">
                                 <Download />
