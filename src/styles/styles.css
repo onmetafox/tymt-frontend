@@ -17,6 +17,7 @@ body {
     padding: 16px 24px 16px 24px;
     position: absolute;
     text-align: right;
+    z-index: 100;
     /* right: 200px; */
 }
 /* .feature-button-layout{
@@ -323,7 +324,6 @@ header {
     /* background-image: url("../assets/logos/logo-transp.png"); */
     background-repeat: no-repeat;
     background-size: contain;
-    width: 174px;
     height: 65px;
     /* position: fixed; */
     /* left: 172px; */
@@ -347,18 +347,17 @@ header {
 }
 .header-button {
     z-index: 100000;
-    width: 255px;
-    height: 46px;
+    height: 55px;
     border: solid 1px #EF4444;
-    border-radius: 17px;
+    border-radius: 14px;
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
+    font-size: 24px;
     text-align: center;
-    line-height: 46px;
+    font-weight: 400;
+    line-height: 35.14px;
     margin:5px;
+    padding: 0px 20px 0px 20px;
+    z-index: 0;
 }
 .header-button:hover {
     color: white;
@@ -378,19 +377,17 @@ header {
 }
 .download-button {
     z-index: 100000;
-    width: 255px;
-    height: 46px;
+    height: 55px;
     border: solid 1px #EF4444;
-    border-radius: 17px;
+    border-radius: 14px;
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
+    font-size: 24px;
+    font-weight: 400;
     text-align: center;
-    line-height: 46px;
+    line-height: 34.15px;
     margin:5px;
     background-color: #EF4444;
+    padding: 0px 20px 0px 20px;
 }
 .download-button:hover {
     background-color: #992727;
@@ -470,7 +467,7 @@ header {
 }
 .color-about-title{
     text-align: left;
-    line-height: 0.7;
+    line-height: 0.6;
     margin-bottom: 38px;
 }
 .about {
@@ -498,9 +495,6 @@ header {
     width: 50%;
     p{
         text-align: left;
-    }
-    .download-button{
-        width: 255px;
     }
 }
 
@@ -2640,34 +2634,31 @@ input[type=range]:focus::-ms-fill-upper {
     }
     .download-button{
         display: block;
-        width: 202px;
-        display: flex;
-        align-items: center;
+        height: 46px;
+        font-size: 18px !important;
+        margin-top: auto;
+        margin-bottom: auto;
+        font-weight: 400;
     }
     .available {
         display: none;
     }
     .header-logo {
-        width: 174px;
         height: 65px;
         /* position: fixed;
         left: 82px; */
     }
 
-    .header-button {
-        width: 144px;
-        height: 46px;
-        /* position: fixed;
-        right: 80px;
-        top: 22px; */
-        border: solid 1px #EF4444;
-        border-radius: 17px;
-        color: #52E1F2;
-        display: flex;
-        justify-content: center;
-        font-size: 18px;
-        text-align: center;
-        line-height: 46px;
+    .about-title {
+        .header-button {
+            height: 55px;
+            position: unset;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            line-height: 46px;
+            margin: auto;
+        }
     }
 
     /* .home-text-image {
@@ -3089,21 +3080,16 @@ input[type=range]:focus::-ms-fill-upper {
         background-image: unset;
         position: relative;
     }
-
-    .header-button {
-        width: 202px;
-        height: 46px;
-        position: unset;
-        border: solid 1px #EF4444;
-        border-radius: 17px;
-        color: white;
-        display: flex;
-        justify-content: center;
-        font-size: 18px;
-        text-align: center;
-        line-height: 46px;
-        margin: auto;
-        border-radius: 14px;
+    .about-title {
+        .header-button {
+            height: 55px;
+            position: unset;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            line-height: 46px;
+            margin: auto;
+        }
     }
 
     .icons-view {

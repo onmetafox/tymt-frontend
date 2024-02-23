@@ -43,8 +43,8 @@ const Home = () => {
                             We are developing the next generation Game Launcher that bridges the gaps between blockchain and traditional gaming.
                         </p>
                         <div className="dropdown">
-                            <div className="action-button download-button fc-m2">
-                                <span>Install and Play now</span>
+                            <div className="action-button download-button fc-l">
+                                Install and Play now
                             </div>
                             <div className="dropdown-content">
                                 <Download />
@@ -53,7 +53,7 @@ const Home = () => {
                         <p className='fs-p grey-color'>
                             If you are a developer and want to create or publish a game using the benefits of the Solar blockchain - check out our GitHub documentation.
                         </p>
-                        <div className="action-button header-button fc-m2">
+                        <div className="action-button header-button fc-l">
                             <span>Developer GitHub</span>
                         </div>
                     </div>
@@ -75,7 +75,7 @@ const Home = () => {
                             We are developing the next generation Game Launcher that bridges the gaps between blockchain and traditional gaming.
                         </p>
                         <div className="dropdown">
-                            <div className="action-button download-button fc-m2">
+                            <div className="action-button download-button fc-l">
                                 <span>Install and Play now</span>
                             </div>
                             <div className="dropdown-content">
@@ -89,7 +89,7 @@ const Home = () => {
                     <p className='fs-p grey-color developer-text'>
                         If you are a developer and want to create or publish a game using the benefits of the Solar blockchain - check out our GitHub documentation.
                     </p>
-                    <div className="action-button header-button fc-m2">
+                    <div className="action-button header-button fc-l">
                         <span>Developer GitHub</span>
                     </div>
                 </>)}

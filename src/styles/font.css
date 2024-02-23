@@ -165,11 +165,7 @@ h2 {
 }
 
 @media only screen and (max-width: 600px) {
-  .fc-xl2-Italic {
-    font-size: 90px;
-    font-family: "CobeItalic";
-    font-weight: 500;
-  }
+  
 }
 
 @media only screen and (max-width: 1350px) {
@@ -204,6 +200,14 @@ h2 {
 }
 
 @media only screen and (max-width: 600px) {
+  .fc-xl2-Italic {
+    font-size: 90px;
+    font-family: "CobeItalic";
+    font-weight: 500;
+  }
+  .fs-p {
+    font-size: 16px;
+  }
   .fc-l-Italic {
     font-size: 24px;
     font-family: "CobeItalic";

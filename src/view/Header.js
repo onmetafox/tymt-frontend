@@ -18,11 +18,11 @@ const Header = () =>{
                     <img src= {logo} className='header-logo-image' alt='logo'/>
                 </div>
                 <div className='header-button-group'>
-                    <div className="action-button header-button fc-m2">
+                    <div className="action-button header-button fc-l">
                         Developer GitHub
                     </div>   
                     <div className="dropdown">
-                        <div className="action-button download-button fc-m2">
+                        <div className="action-button download-button fc-l">
                             Install and Play now
                         </div>
                         <div className="dropdown-content">
