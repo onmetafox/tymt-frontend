@@ -3,7 +3,7 @@ import "../styles/styles.css";
 import "../styles/font.css";
 import "../styles/colors.css";
 import solarImage from "../assets/images/temp-img.svg";
-// import tempImg from "../assets/images/temp-img-sm.svg";
+import tempImg from "../assets/images/temp-img-sm.svg";
 import Download from "../components/DownCmp";
 const Home = () => {
     function changeView () {
@@ -84,7 +84,7 @@ const Home = () => {
                         </div> 
                     </div>
                     <div className="about-solar-logo">
-                        <img alt="solar logo" src={solarImage} />
+                        <img alt="solar logo" src={tempImg} />
                     </div>
                     <p className='fs-p grey-color developer-text'>
                         If you are a developer and want to create or publish a game using the benefits of the Solar blockchain - check out our GitHub documentation.
