@@ -3135,12 +3135,18 @@ input[type=range]:focus::-ms-fill-upper {
         line-height: 0.8;
         text-align: center;
     }
+    p{
+        padding: 10px;
+    }
     .about-title {
-        padding: 20px;
         justify-content: center;
         flex-direction: column;
         text-align: center;
         align-items: center;
+        margin-top: 150px;
+    }
+    .developer-text{
+        text-align: center;
     }
     .about-solar-logo {
         width: 100%;
