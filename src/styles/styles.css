@@ -480,11 +480,37 @@ header {
     width: 50%;
     text-align: center;
     margin: auto;
-    img{
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+    .solar-img{
         width: 135%;
+        margin-right: -10%;
     }
 }
-
+.support-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 300px;
+    margin-right: 0;
+    gap: 10px;
+    margin-top: 50px;
+}
+.os-container{
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    .os-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+    }
+}
 .about-title {
     text-align: center;
     display: flex;
@@ -2179,18 +2205,17 @@ input[type=range]:focus::-ms-fill-upper {
   
   .tooltip .tooltiptext {
     visibility: hidden;
-    padding: 0.25em 0.5em;
-    background-color: black;
+    background-color: #393939;
     color: #fff;
     text-align: center;
-    border-radius: 0.25em;
+    border-radius: 3rem !important;
     white-space: nowrap;
     position: absolute;
     z-index: 1;
-    top: 100%;
-    left: 30%;
+    top: -103%;
     transition-property: visibility;
     transition-delay: 0s;
+    padding: 8px 16px 8px 16px;
   }
   
   .tooltip:hover .tooltiptext {
@@ -2940,6 +2965,10 @@ input[type=range]:focus::-ms-fill-upper {
         height: 460px;
         top: 350px;
         right: 0px;
+    }
+    .support-container {
+        max-width: 100%;
+        align-items: center;
     }
     .loader-sparkle-right {
         top: -200px;
