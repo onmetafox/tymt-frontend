@@ -15,7 +15,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-layout">
           <div className="footer-copyright color-gray">
-            <p className="fc-m" style={{whiteSpace: "nowrap"}}>©2024. All right reserved.</p>
+            <p className="fc-m grey-color" style={{whiteSpace: "nowrap"}}>©2024. All right reserved.</p>
             <div className="fc-m">
               <p className="fc-m hover-gray-color grey-color footer-right">
                 The first game available on tymt is District 53 - a voxel-based game, based on the Mintetest engine.<br/>

@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import MainLayout from './layout/MainLayout';
 import { Routes, Route} from "react-router-dom";
 import Error from './view/404';
-import Waitlist from './view/Waitlist';
-import ContactForm from './view/ContactForm';
+// import Waitlist from './view/Waitlist';
+// import ContactForm from './view/ContactForm';
 import Loader from "./view/Loader";
-import Privacy from "./view/Privacy";
-import Terms from "./view/Terms";
+// import Privacy from "./view/Privacy";
+// import Terms from "./view/Terms";
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -28,10 +28,10 @@ function App() {
         <>
           <Route path="/" element={<MainLayout />}></Route>
           <Route path="*" element={<Error />}></Route>
-          <Route path="waitlist" element={<Waitlist />}></Route>
+          {/* <Route path="waitlist" element={<Waitlist />}></Route>
           <Route path="contactForm" element={<ContactForm />}></Route>
           <Route path="privacy" element={<Privacy />}/>
-          <Route path="terms" element={<Terms />}/>
+          <Route path="terms" element={<Terms />}/> */}
         </>
       )}
     </Routes>

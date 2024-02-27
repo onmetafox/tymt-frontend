@@ -1,5 +1,5 @@
 import React from 'react';
-import "../styles/styles.css";
+// import "../styles/styles.css";
 import Header from '../view/Header';
 import Home from '../view/Home';
 // import Benefit from '../view/Benefit';
