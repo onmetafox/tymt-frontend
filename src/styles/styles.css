@@ -50,7 +50,7 @@ body {
     display: flex;
     justify-content: center;
     padding-top:150px;
-    min-height: calc( 100vh - 300px);
+    min-height: calc( 100vh - 265px);
     align-items: center;
 }
 .delayed-animation {
@@ -160,7 +160,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
 }
 .header-button:hover {
     color: white;
@@ -309,13 +308,13 @@ header {
     text-align: center;
     align-items: center;
     gap: 20px;
-}
-.os-container > .os-item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
+    .os-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+    }
 }
 .about-title {
     text-align: center;
@@ -575,7 +574,7 @@ a:hover {
 }
 .footer-right {
     line-height: 20px !important;
-    max-width: 800px;
+    max-width: 775px;
     text-align: right;
 }
 .solar-container{
@@ -615,9 +614,9 @@ a:hover {
     .download-button {
         display: flex;
     }
-    /* .tooltiptext {
+    .tooltiptext {
         display: none;
-    }*/
+    }
 
     .header-button-group>.header-button{
         display: none;
