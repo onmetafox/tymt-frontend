@@ -9,7 +9,6 @@ import Download from "../components/DownCmp";
 import winIco from "../assets/icons/win-icon.svg";
 import linuxIco from "../assets/icons/linux-icon.svg";
 import macIco from "../assets/icons/mac-icon.svg";
-import macIcoGray from "../assets/icons/mac-icon-gray.svg";
 const Home = () => {
     function changeView () {
         const { innerWidth: width, innerHeight: height } = window;
@@ -72,28 +71,16 @@ const Home = () => {
                             <span className='grey-color fc-m support-text'>Supported by:</span>
                             <div className='os-container'>
                                 <div className='os-item'>
-                                    <div>
-                                        <img src= {winIco} alt='win icon'/>
-                                    </div>
-                                    <div className='fc-m white-color'>
-                                        Windows
-                                    </div>
+                                    <img src= {winIco} width={24} alt='win icon'/>
+                                    <span className='fc-m white-color'>Windows</span>
                                 </div>
                                 <div className='os-item'>
-                                    <div>
-                                        <img src= {linuxIco} alt='win icon'/>
-                                    </div>
-                                    <div className='fc-m white-color'>
-                                        Linux
-                                    </div>
+                                    <img src= {linuxIco} width={24} alt='linux icon'/>
+                                    <span className='fc-m white-color'>Linux</span>
                                 </div>
                                 <div className='os-item' data-tooltip-id="my-tooltip-inline" data-tooltip-content="Coming Soon...">
-                                    <div>
-                                        <img src= {macIcoGray} alt='win icon'/>
-                                    </div>
-                                    <div className='fc-m nav-color'>
-                                        MacOS
-                                    </div>
+                                    <img src= {macIco} width={24} alt='mac icon'/>
+                                    <span className='fc-m white-color'>MacOS</span>
                                     <Tooltip  id="my-tooltip-inline" className='tooltiptext fc-m' style={{borderRadius: '30px'}}/>
                                 </div>
                             </div>
@@ -114,8 +101,8 @@ const Home = () => {
                             We are developing the next generation Game Launcher that bridges the gaps between blockchain and traditional gaming.
                         </p>
                         <div className="dropdown">
-                            <div className="action-button download-button fc-l modal-button-disable">
-                                <span>Coming soon...</span>
+                            <div className="action-button download-button fc-l">
+                                <span>Not support on Android</span>
                             </div>
                             <div className="dropdown-content">
                                 <Download />
@@ -132,35 +119,23 @@ const Home = () => {
                         If you are a developer and want to create or publish a game using the benefits of the Solar blockchain - check out our GitHub documentation.
                     </p>
                     <a className="action-button header-button fc-l" href = 'https://github.com/solar-network' target='_blank' rel="noreferrer">
-                        <span>Developer GitHub</span>
+                            <span>Developer GitHub</span>
                     </a>
                     <div className='support-container'>
                         <span className='grey-color fc-m support-text'>Supported by:</span>
                         <div className='os-container'>
                             <div className='os-item'>
-                                <div>
-                                    <img src= {winIco} alt='win icon'/>
-                                </div>
-                                <div className='fc-m white-color'>
-                                    Windows
-                                </div>
+                                <img src= {winIco} width={19} alt='win icon'/>
+                                <span className='fc-m white-color'>Windows</span>
                             </div>
                             <div className='os-item'>
-                                <div>
-                                    <img src= {linuxIco} alt='win icon'/>
-                                </div>
-                                <div className='fc-m white-color'>
-                                    Linux
-                                </div>
+                                <img src= {linuxIco} width={19} alt='linux icon'/>
+                                <span className='fc-m white-color'>Linux</span>
                             </div>
                             <div className='os-item' data-tooltip-id="my-tooltip-inline" data-tooltip-content="Coming Soon...">
-                                <div>
-                                    <img src= {macIcoGray} alt='win icon'/>
-                                </div>
-                                <div className='fc-m nav-color'>
-                                    MacOS
-                                </div>
-                                <Tooltip id="my-tooltip-inline" isOpen={true} className='tooltiptext fc-m' place={'bottom-start'} style={{ borderRadius: '30px'}} />
+                                <img src= {macIco} width={24} alt='mac icon'/>
+                                <span className='fc-m white-color'>MacOS</span>
+                                <Tooltip  id="my-tooltip-inline" className='tooltiptext fc-m' style={{borderRadius: '30px'}}/>
                             </div>
                         </div>
                     </div>
