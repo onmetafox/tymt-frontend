@@ -50,6 +50,8 @@ body {
     display: flex;
     justify-content: center;
     padding-top:150px;
+    min-height: calc( 100vh - 300px);
+    align-items: center;
 }
 .delayed-animation {
     animation-delay: 1s;
@@ -57,24 +59,25 @@ body {
 }
 
 .home-left-light {
-    background-image: url("../assets/images/left-light.png");
+    background-image: url("../assets/images/left-light.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 567px;
-    height: 590px;
+    width: 949px;
+    height: 790px;
     position: absolute;
-    top: 551px;
+    top: 200px;
     z-index: 0;
+    left: 0;
 }
 
 .home-right-light {
     background-image: url("../assets/images/right-light.png");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 250px;
-    height: 590px;
+    width: 603px;
+    height: 1030px;
     position: absolute;
-    top: 92px;
+    top: 0;
     right: 0;
     z-index: 0;
 }
@@ -152,11 +155,12 @@ header {
     font-weight: 400;
     line-height: 35.14px;
     margin:5px;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 20px 5px 20px;
     z-index: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 .header-button:hover {
     color: white;
@@ -186,7 +190,7 @@ header {
     line-height: 34.15px;
     margin:5px;
     background-color: #EF4444;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 20px 5px 20px;
     display: flex;
     align-items: center;
 }
@@ -285,8 +289,8 @@ header {
     flex-direction: column;
     align-items: self-end;
     .solar-img{
-        width: 135%;
-        margin-right: -10%;
+        width: 120%;
+        margin-left: -10%;
     }
 }
 .support-container{
@@ -296,7 +300,8 @@ header {
     max-width: 300px;
     margin-right: 0;
     gap: 10px;
-    margin-top: 50px;
+    margin-top: -150px;
+    z-index: 100;
 }
 .os-container{
     display: flex;
@@ -304,13 +309,13 @@ header {
     text-align: center;
     align-items: center;
     gap: 20px;
-    .os-item{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        cursor: pointer;
-    }
+}
+.os-container > .os-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
 }
 .about-title {
     text-align: center;
@@ -552,8 +557,6 @@ a:hover {
 .footer {
     width: 100%;
     color: white;
-    margin-top: 80px;
-    margin-bottom: 90px;
 }
 
 
@@ -568,15 +571,37 @@ a:hover {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 .footer-right {
     line-height: 20px !important;
-    max-width: 775px;
+    max-width: 800px;
     text-align: right;
+}
+.solar-container{
+    position: relative;
+    .fox-img{
+        position: absolute;
+        top: 50%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+    }
+}
+.blink {
+    animation: opacity-animation 2s infinite;
+    -webkit-animation: opacity-animation 2s infinite;
+}
+.delayed-animation {
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
 }
 
 @media only screen and (max-width: 600px) {
+    .about-solar-logo .solar-img { width: 100%;}
+    .fox-img{
+        left: 50% !important;
+    }
+    .dropdown:hover .dropdown-content {display: none;}
     .header-container{
         width: 100%;
         margin: unset;
@@ -635,6 +660,7 @@ a:hover {
     .support-container {
         max-width: 100%;
         align-items: center;
+        margin-top: 50px;
     }
     .loader-sparkle-right {
         top: -200px;
@@ -832,13 +858,10 @@ a:hover {
     .about-solar-logo {
         width: 100%;
         align-items: center;
-        img{
-            width: 100% !important;
-            margin-right: unset !important;
-        }
+        
     }
     .about-solar-logo img{
-        width: 100%;
+        width: 97%;
     }
 
     .about {
@@ -998,7 +1021,7 @@ a:hover {
         padding-bottom: 0;
     }
     .footer-layout{
-        padding: 30px;
+        padding: 15px;
     }
     .revert {
         flex-direction: column-reverse
@@ -1066,6 +1089,7 @@ a:hover {
     }
     .footer{
         margin-top: 0px;
+        margin-bottom: 0px;
     }
     .modal-layout{
         width: 100%;
