@@ -50,7 +50,7 @@ body {
     display: flex;
     justify-content: center;
     padding-top:150px;
-    min-height: calc( 100vh - 265px);
+    min-height: calc( 100vh - 300px);
     align-items: center;
 }
 .delayed-animation {
