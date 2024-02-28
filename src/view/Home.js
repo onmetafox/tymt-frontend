@@ -114,7 +114,7 @@ const Home = () => {
                         </p>
                         <div className="dropdown">
                             <div className="action-button download-button fc-l">
-                                <span>Not support on Android</span>
+                                <span>Not support on Mobile</span>
                             </div>
                             <div className="dropdown-content">
                                 <Download />
