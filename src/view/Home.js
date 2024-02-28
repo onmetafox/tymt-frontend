@@ -157,10 +157,10 @@ const Home = () => {
                                 <div>
                                     <img src= {macIcoGray} alt='win icon'/>
                                 </div>
-                                <div className='fc-m nav-color' style={{textDecoration: "line-through"}}>
+                                <div className='fc-m nav-color'>
                                     MacOS
                                 </div>
-                                <Tooltip id="my-tooltip-inline" className='tooltiptext fc-m' style={{ borderRadius: '30px'}} />
+                                <Tooltip id="my-tooltip-inline" isOpen={true} className='tooltiptext fc-m' place={'bottom-start'} style={{ borderRadius: '30px'}} />
                             </div>
                         </div>
                     </div>

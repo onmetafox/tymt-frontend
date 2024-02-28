@@ -615,9 +615,9 @@ a:hover {
     .download-button {
         display: flex;
     }
-    .tooltiptext {
+    /* .tooltiptext {
         display: none;
-    }
+    }*/
 
     .header-button-group>.header-button{
         display: none;
