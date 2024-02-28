@@ -119,7 +119,7 @@ const Home = () => {
                         If you are a developer and want to create or publish a game using the benefits of the Solar blockchain - check out our GitHub documentation.
                     </p>
                     <a className="action-button header-button fc-l" href = 'https://github.com/solar-network' target='_blank' rel="noreferrer">
-                            <span>Developer GitHub</span>
+                        <span>Developer GitHub</span>
                     </a>
                     <div className='support-container'>
                         <span className='grey-color fc-m support-text'>Supported by:</span>

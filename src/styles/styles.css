@@ -286,7 +286,7 @@ header {
     flex-direction: column;
     align-items: self-end;
     .solar-img{
-        width: 135%;
+        width: 120%;
         margin-left: -10%;
     }
 }
@@ -298,6 +298,7 @@ header {
     margin-right: 0;
     gap: 10px;
     margin-top: -150px;
+    z-index: 100;
 }
 .os-container{
     display: flex;
@@ -581,7 +582,7 @@ a:hover {
     .fox-img{
         position: absolute;
         top: 50%;
-        left: 50%;
+        left: 55%;
         transform: translate(-50%, -50%);
     }
 }
@@ -595,7 +596,10 @@ a:hover {
 }
 
 @media only screen and (max-width: 600px) {
-    
+    .about-solar-logo .solar-img { width: 100%;}
+    .fox-img{
+        left: 50% !important;
+    }
     .dropdown:hover .dropdown-content {display: none;}
     .header-container{
         width: 100%;
@@ -856,7 +860,7 @@ a:hover {
         
     }
     .about-solar-logo img{
-        width: 100%;
+        width: 97%;
     }
 
     .about {
@@ -1084,6 +1088,7 @@ a:hover {
     }
     .footer{
         margin-top: 0px;
+        margin-bottom: 0px;
     }
     .modal-layout{
         width: 100%;
