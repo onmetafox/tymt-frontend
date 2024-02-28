@@ -89,9 +89,9 @@ const Home = () => {
                                 </div>
                                 <div className='os-item' data-tooltip-id="my-tooltip-inline" data-tooltip-content="Coming Soon...">
                                     <div>
-                                        <img src= {macIco} alt='win icon'/>
+                                        <img src= {macIcoGray} alt='win icon'/>
                                     </div>
-                                    <div className='fc-m white-color'>
+                                    <div className='fc-m nav-color'>
                                         MacOS
                                     </div>
                                     <Tooltip  id="my-tooltip-inline" className='tooltiptext fc-m' style={{borderRadius: '30px'}}/>
@@ -157,10 +157,10 @@ const Home = () => {
                                 <div>
                                     <img src= {macIcoGray} alt='win icon'/>
                                 </div>
-                                <div className='fc-m nav-color'>
+                                <div className='fc-m nav-color' style={{textDecoration: "line-through"}}>
                                     MacOS
                                 </div>
-                                <Tooltip  id="my-tooltip-inline" className='tooltiptext fc-m' style={{borderRadius: '30px'}}/>
+                                <Tooltip id="my-tooltip-inline" className='tooltiptext fc-m' style={{ borderRadius: '30px'}} />
                             </div>
                         </div>
                     </div>
