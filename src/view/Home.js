@@ -113,8 +113,8 @@ const Home = () => {
                             We are developing the next generation Game Launcher that bridges the gaps between blockchain and traditional gaming.
                         </p>
                         <div className="dropdown">
-                            <div className="action-button download-button fc-l">
-                                <span>Not support on Mobile</span>
+                            <div className="action-button download-button fc-l modal-button-disable">
+                                <span>Coming soon...</span>
                             </div>
                             <div className="dropdown-content">
                                 <Download />

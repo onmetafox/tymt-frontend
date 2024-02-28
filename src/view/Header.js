@@ -41,9 +41,9 @@ const Header = () =>{
                         {!mobileView && <div className="action-button download-button fc-l">    
                             Install and Play now
                         </div>}
-                        {mobileView && <div className="action-button download-button fc-l">    
-                            Not support on Mobile
-                        </div>}
+                        {/* {mobileView && <div className="download-button fc-l modal-button-disable">    
+                            Not supported
+                        </div>} */}
                         
                         <div className="dropdown-content">
                             <Download />
