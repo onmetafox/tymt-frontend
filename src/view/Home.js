@@ -9,6 +9,7 @@ import Download from "../components/DownCmp";
 import winIco from "../assets/icons/win-icon.svg";
 import linuxIco from "../assets/icons/linux-icon.svg";
 import macIco from "../assets/icons/mac-icon.svg";
+import macIcoGray from "../assets/icons/mac-icon-gray.svg";
 const Home = () => {
     function changeView () {
         const { innerWidth: width, innerHeight: height } = window;
@@ -57,7 +58,7 @@ const Home = () => {
                         <p className='fs-p grey-color'>
                             If you are a developer and want to create or publish a game using the benefits of the Solar blockchain - check out our GitHub documentation.
                         </p>
-                        <a className="action-button header-button fc-l" href = 'https://github.com/solar-network' target='_blank' rel="noreferrer">
+                        <a className="action-button header-button fc-l" href = 'https://github.com/dokdo-sh/tymtLauncher' target='_blank' rel="noreferrer">
                             <span>Developer GitHub</span>
                         </a>
                     </div>
@@ -71,16 +72,28 @@ const Home = () => {
                             <span className='grey-color fc-m support-text'>Supported by:</span>
                             <div className='os-container'>
                                 <div className='os-item'>
-                                    <img src= {winIco} width={24} alt='win icon'/>
-                                    <span className='fc-m white-color'>Windows</span>
+                                    <div>
+                                        <img src= {winIco} alt='win icon'/>
+                                    </div>
+                                    <div className='fc-m white-color'>
+                                        Windows
+                                    </div>
                                 </div>
                                 <div className='os-item'>
-                                    <img src= {linuxIco} width={24} alt='linux icon'/>
-                                    <span className='fc-m white-color'>Linux</span>
+                                    <div>
+                                        <img src= {linuxIco} alt='win icon'/>
+                                    </div>
+                                    <div className='fc-m white-color'>
+                                        Linux
+                                    </div>
                                 </div>
                                 <div className='os-item' data-tooltip-id="my-tooltip-inline" data-tooltip-content="Coming Soon...">
-                                    <img src= {macIco} width={24} alt='mac icon'/>
-                                    <span className='fc-m white-color'>MacOS</span>
+                                    <div>
+                                        <img src= {macIcoGray} alt='win icon'/>
+                                    </div>
+                                    <div className='fc-m nav-color'>
+                                        MacOS
+                                    </div>
                                     <Tooltip  id="my-tooltip-inline" className='tooltiptext fc-m' style={{borderRadius: '30px'}}/>
                                 </div>
                             </div>
@@ -100,14 +113,17 @@ const Home = () => {
                         <p className='fs-p white-color'>
                             We are developing the next generation Game Launcher that bridges the gaps between blockchain and traditional gaming.
                         </p>
-                        <div className="dropdown">
-                            <div className="action-button download-button fc-l">
-                                <span>Not support on Android</span>
+                        <p className='fs-p white-color'>
+                            
+                        </p>
+                        {/* <div className="dropdown">
+                            <div className="action-button download-button fc-l modal-button-disable">
+                                <span></span>
                             </div>
                             <div className="dropdown-content">
                                 <Download />
                             </div>
-                        </div> 
+                        </div>  */}
                     </div>
                     <div className="about-solar-logo">
                         <div className='solar-container'>
@@ -118,24 +134,36 @@ const Home = () => {
                     <p className='fs-p grey-color developer-text'>
                         If you are a developer and want to create or publish a game using the benefits of the Solar blockchain - check out our GitHub documentation.
                     </p>
-                    <a className="action-button header-button fc-l" href = 'https://github.com/solar-network' target='_blank' rel="noreferrer">
+                    <a className="action-button header-button fc-l" href = 'https://github.com/dokdo-sh/tymtLauncher' target='_blank' rel="noreferrer">
                         <span>Developer GitHub</span>
                     </a>
                     <div className='support-container'>
                         <span className='grey-color fc-m support-text'>Supported by:</span>
                         <div className='os-container'>
                             <div className='os-item'>
-                                <img src= {winIco} width={19} alt='win icon'/>
-                                <span className='fc-m white-color'>Windows</span>
+                                <div>
+                                    <img src= {winIco} alt='win icon'/>
+                                </div>
+                                <div className='fc-m white-color'>
+                                    Windows
+                                </div>
                             </div>
                             <div className='os-item'>
-                                <img src= {linuxIco} width={19} alt='linux icon'/>
-                                <span className='fc-m white-color'>Linux</span>
+                                <div>
+                                    <img src= {linuxIco} alt='win icon'/>
+                                </div>
+                                <div className='fc-m white-color'>
+                                    Linux
+                                </div>
                             </div>
                             <div className='os-item' data-tooltip-id="my-tooltip-inline" data-tooltip-content="Coming Soon...">
-                                <img src= {macIco} width={24} alt='mac icon'/>
-                                <span className='fc-m white-color'>MacOS</span>
-                                <Tooltip  id="my-tooltip-inline" className='tooltiptext fc-m' style={{borderRadius: '30px'}}/>
+                                <div>
+                                    <img src= {macIcoGray} alt='win icon'/>
+                                </div>
+                                <div className='fc-m nav-color'>
+                                    MacOS
+                                </div>
+                                <Tooltip id="my-tooltip-inline" isOpen={true} className='tooltiptext fc-m' place={'bottom-start'} style={{ borderRadius: '30px'}} />
                             </div>
                         </div>
                     </div>
