@@ -1,20 +1,14 @@
 body {
     margin: 0;
-    background-color: black !important;
+    background-color: black;
     font-family: "Satoshi";
     overflow-y: auto;
-    background-image: url("../assets/images/home-bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .container {
     max-width:1368px;
     margin-left: auto;
     margin-right: auto;
     /* text-align: center; */
-}
-a{
-    text-decoration: none !important;
 }
 .download {
     background: black;
@@ -50,8 +44,9 @@ a{
     margin: 10px
 }
 .home-section {
-    
-    
+    background-image: url("../assets/images/home-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     padding-top:150px;
@@ -79,8 +74,8 @@ a{
     background-image: url("../assets/images/right-light.png");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 558px;
-    height: 946px;
+    width: 603px;
+    height: 1030px;
     position: absolute;
     top: 0;
     right: 0;
@@ -89,6 +84,7 @@ a{
 
 header {
     z-index: 1;
+    position: absolute;
     background-color: transparent !important;
     height: 126px;
     box-shadow: none !important;
@@ -114,6 +110,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 1368px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -158,30 +155,6 @@ header {
     font-weight: 400;
     line-height: 35.14px;
     margin:5px;
-    padding: 0px 20px 0px 20px;
-    z-index: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-.header-button:hover {
-    color: white;
-    background-color: #EF4444;
-    cursor: pointer;
-}
-.header-button-windows {
-    z-index: 100000;
-    height: 50px;
-    border: solid 1px #EF4444;
-    border-radius: 14px;
-    color: white;
-    font-size: 24px;
-    text-align: center;
-    font-weight: 400;
-    line-height: 35.14px;
-    margin:5px;
     padding: 0px 20px 5px 20px;
     z-index: 0;
     display: flex;
@@ -189,7 +162,7 @@ header {
     justify-content: center;
     position: relative;
 }
-.header-button-windows:hover {
+.header-button:hover {
     color: white;
     background-color: #EF4444;
     cursor: pointer;
@@ -217,32 +190,11 @@ header {
     line-height: 34.15px;
     margin:5px;
     background-color: #EF4444;
-    padding: 0px 20px 0px 20px;
-    display: flex;
-    align-items: center;
-}
-.download-button:hover {
-    background-color: #992727;
-    border: solid 1px #992727;
-    cursor: pointer;
-}
-.download-button-windows {
-    z-index: 100000;
-    height: 50px;
-    border: solid 1px #EF4444;
-    border-radius: 14px;
-    color: white;
-    font-size: 24px;
-    font-weight: 400;
-    text-align: center;
-    line-height: 34.15px;
-    margin:5px;
-    background-color: #EF4444;
     padding: 0px 20px 5px 20px;
     display: flex;
     align-items: center;
 }
-.download-button-windows:hover {
+.download-button:hover {
     background-color: #992727;
     border: solid 1px #992727;
     cursor: pointer;
@@ -357,13 +309,13 @@ header {
     text-align: center;
     align-items: center;
     gap: 20px;
-}
-.os-container > .os-item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
+    .os-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+    }
 }
 .about-title {
     text-align: center;
@@ -663,9 +615,9 @@ a:hover {
     .download-button {
         display: flex;
     }
-    /* .tooltiptext {
+    .tooltiptext {
         display: none;
-    }*/
+    }
 
     .header-button-group>.header-button{
         display: none;
