@@ -1,14 +1,20 @@
 body {
     margin: 0;
-    background-color: black;
+    background-color: black !important;
     font-family: "Satoshi";
     overflow-y: auto;
+    background-image: url("../assets/images/home-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .container {
     max-width:1368px;
     margin-left: auto;
     margin-right: auto;
     /* text-align: center; */
+}
+a{
+    text-decoration: none !important;
 }
 .download {
     background: black;
@@ -44,9 +50,8 @@ body {
     margin: 10px
 }
 .home-section {
-    background-image: url("../assets/images/home-bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    
+    
     display: flex;
     justify-content: center;
     padding-top:150px;
@@ -74,8 +79,8 @@ body {
     background-image: url("../assets/images/right-light.png");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 603px;
-    height: 1030px;
+    width: 558px;
+    height: 946px;
     position: absolute;
     top: 0;
     right: 0;
@@ -84,7 +89,6 @@ body {
 
 header {
     z-index: 1;
-    position: absolute;
     background-color: transparent !important;
     height: 126px;
     box-shadow: none !important;
@@ -110,7 +114,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1368px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -309,13 +312,13 @@ header {
     text-align: center;
     align-items: center;
     gap: 20px;
-    .os-item{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        cursor: pointer;
-    }
+}
+.os-container > .os-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
 }
 .about-title {
     text-align: center;
@@ -615,9 +618,9 @@ a:hover {
     .download-button {
         display: flex;
     }
-    .tooltiptext {
+    /* .tooltiptext {
         display: none;
-    }
+    }*/
 
     .header-button-group>.header-button{
         display: none;
