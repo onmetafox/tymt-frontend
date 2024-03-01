@@ -304,7 +304,6 @@ header {
     max-width: 300px;
     margin-right: 0;
     gap: 10px;
-    margin-top: -150px;
     z-index: 100;
 }
 .os-container{
