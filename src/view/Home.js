@@ -10,8 +10,6 @@ import winIco from "../assets/icons/win-icon.svg";
 import linuxIco from "../assets/icons/linux-icon.svg";
 import macIcoGray from "../assets/icons/mac-icon-gray.svg";
 const Home = () => {
-    const platform = window.navigator.platform;
-    console.log(platform)
     function changeView () {
         const { innerWidth: width, innerHeight: height } = window;
         if(width <= 600 && height){
@@ -46,14 +44,16 @@ const Home = () => {
                         <p className='fs-p white-color'>
                             We are developing the next generation Game Launcher that bridges the gaps between blockchain and traditional gaming.
                         </p>
-                        <div className="dropdown">
+                        {!isMobile && <div className="dropdown">
+                            
                             <div className="action-button download-button fc-l">
                                 Install and Play now
                             </div>
                             <div className="dropdown-content">
                                 <Download />
                             </div>
-                        </div> 
+                        </div> }
+                        
                         <p className='fs-p grey-color'>
                             If you are a developer and want to create or publish a game using the benefits of the Solar blockchain - check out our GitHub documentation.
                         </p>

@@ -6,33 +6,15 @@ import logo from "../assets/logos/logo-transp.png";
 // import available from "../assets/images/availe.svg";
 import available_mobile from "../assets/images/available-mobile.svg";
 import { OS, currentBrowser } from '../utils/getEnv';
-import { current } from 'immer';
 
 const Header = () =>{
     const navigate = useNavigate();
     const [os, setOs] = useState(OS(window));
     const [browser, setBrowser] = useState(currentBrowser(window));
-    function changeView () {
-        const { innerWidth: width, innerHeight: height } = window;
-        if(width <= 600 && height){
-            return true;
-        }else{
-            return false;
-        }
-        
-    }
-    const [mobileView, setMobileView] = useState(changeView());
 
     useEffect(() => {
     }, [os, browser])
-
-    useEffect(() => {
-        function handleResize() {
-            setMobileView(changeView());
-        }
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
+    
     return(
         
         <header className="header">
