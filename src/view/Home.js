@@ -9,7 +9,10 @@ import Download from "../components/DownCmp";
 import winIco from "../assets/icons/win-icon.svg";
 import linuxIco from "../assets/icons/linux-icon.svg";
 import macIcoGray from "../assets/icons/mac-icon-gray.svg";
+import { OS } from '../utils/getEnv';
+
 const Home = () => {
+    const [os] = useState(OS(window));
     function changeView () {
         const { innerWidth: width, innerHeight: height } = window;
         if(width <= 600 && height){
@@ -46,7 +49,7 @@ const Home = () => {
                         </p>
                         {!isMobile && <div className="dropdown">
                             
-                            <div className="action-button download-button fc-l">
+                            <div className={os === "Windows OS" ? "action-button download-button-windows fc-l":"action-button download-button fc-l"}>
                                 Install and Play now
                             </div>
                             <div className="dropdown-content">
@@ -57,7 +60,7 @@ const Home = () => {
                         <p className='fs-p grey-color'>
                             If you are a developer and want to create or publish a game using the benefits of the Solar blockchain - check out our GitHub documentation.
                         </p>
-                        <a className="action-button header-button fc-l" href = 'https://github.com/dokdo-sh/tymtLauncher' target='_blank' rel="noreferrer">
+                        <a className={os === "Windows OS" ? "action-button header-button-windows fc-l" : "action-button header-button fc-l"} href='https://github.com/dokdo-sh/tymtLauncher' target='_blank' rel="noreferrer">
                             <span>Developer GitHub</span>
                         </a>
                     </div>
