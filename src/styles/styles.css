@@ -77,8 +77,8 @@ a{
     background-image: url("../assets/images/right-light.png");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 200px;
-    height: 100%;
+    width: 150px;
+    height: 100vh;
     position: absolute;
     top: 0;
     right: 0;

@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import { isMobile } from 'react-device-detect';
 import { Tooltip } from 'react-tooltip'
 import "../styles/font.css";
 import "../styles/colors.css";
@@ -9,6 +10,8 @@ import winIco from "../assets/icons/win-icon.svg";
 import linuxIco from "../assets/icons/linux-icon.svg";
 import macIcoGray from "../assets/icons/mac-icon-gray.svg";
 const Home = () => {
+    const platform = window.navigator.platform;
+    console.log(platform)
     function changeView () {
         const { innerWidth: width, innerHeight: height } = window;
         if(width <= 600 && height){

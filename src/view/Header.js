@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import { useNavigate } from "react-router-dom";
+import { isMobile } from 'react-device-detect';
 import Download from "../components/DownCmp";
 import logo from "../assets/logos/logo-transp.png";
 // import available from "../assets/images/availe.svg";
@@ -23,8 +24,6 @@ const Header = () =>{
     const [mobileView, setMobileView] = useState(changeView());
 
     useEffect(() => {
-        console.log("os", os);
-        console.log("browser", browser);
     }, [os, browser])
 
     useEffect(() => {
@@ -46,7 +45,7 @@ const Header = () =>{
                         <span>Developer GitHub</span>
                     </a>
                     <div className="dropdown">
-                        {!mobileView && <div className={OS === "Windows OS" ? "action-button download-button-windows fc-l":"action-button download-button fc-l"}>    
+                        {!isMobile && <div className={OS === "Windows OS" ? "action-button download-button-windows fc-l":"action-button download-button fc-l"}>    
                             Install and Play now
                         </div>}
                         {/* {mobileView && <div className="download-button fc-l modal-button-disable">    
