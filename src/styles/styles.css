@@ -165,7 +165,32 @@ header {
     position: relative;
     white-space: nowrap;
 }
+
 .header-button:hover {
+    color: white;
+    background-color: #EF4444;
+    cursor: pointer;
+}
+.header-button-windows {
+    z-index: 100000;
+    height: 50px;
+    border: solid 1px #EF4444;
+    border-radius: 14px;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 35.14px;
+    margin:5px;
+    padding: 0px 20px 5px 20px;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    white-space: nowrap;
+}
+.header-button-windows:hover {
     color: white;
     background-color: #EF4444;
     cursor: pointer;
@@ -199,6 +224,28 @@ header {
     white-space: nowrap;
 }
 .download-button:hover {
+    background-color: #992727;
+    border: solid 1px #992727;
+    cursor: pointer;
+}
+.download-button-windows {
+    z-index: 100000;
+    height: 50px;
+    border: solid 1px #EF4444;
+    border-radius: 14px;
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 34.15px;
+    margin:5px;
+    background-color: #EF4444;
+    padding: 0px 20px 5px 20px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+.download-button-windows:hover {
     background-color: #992727;
     border: solid 1px #992727;
     cursor: pointer;
