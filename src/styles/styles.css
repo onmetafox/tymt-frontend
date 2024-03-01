@@ -50,13 +50,11 @@ a{
     margin: 10px
 }
 .home-section {
-    
-    
     display: flex;
     justify-content: center;
-    padding-top:150px;
     min-height: calc( 100vh - 300px);
     align-items: center;
+    margin-top: 50px;
 }
 .delayed-animation {
     animation-delay: 1s;
@@ -67,7 +65,7 @@ a{
     background-image: url("../assets/images/left-light.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 949px;
+    width: 400px;
     height: 790px;
     position: absolute;
     top: 200px;
@@ -79,8 +77,8 @@ a{
     background-image: url("../assets/images/right-light.png");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 558px;
-    height: 946px;
+    width: 400px;
+    height: 100%;
     position: absolute;
     top: 0;
     right: 0;
@@ -88,9 +86,10 @@ a{
 }
 
 header {
+    margin-top: 10px;
+    margin-bottom: 10px;
     z-index: 1;
     background-color: transparent !important;
-    height: 126px;
     box-shadow: none !important;
     color: red;
     width: 100%;
@@ -164,6 +163,7 @@ header {
     align-items: center;
     justify-content: center;
     position: relative;
+    white-space: nowrap;
 }
 .header-button:hover {
     color: white;
@@ -196,6 +196,7 @@ header {
     padding: 0px 20px 5px 20px;
     display: flex;
     align-items: center;
+    white-space: nowrap;
 }
 .download-button:hover {
     background-color: #992727;
@@ -349,156 +350,12 @@ header {
     margin-top: -110px;
 }
 
-.about-tymt-text {
-    text-align: right;
-}
-
-.about-images{
-    width: 128px;
-    height: 128px;
-}
-
-.xs-display {
-    display: none;
-}
-
-.about-image-layout {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    align-items: center;
-    margin: auto;
-    margin-top: 225px;
-    margin-bottom:225px;
-}
-
-.about-button-power {
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
-.about-button-image {
-    background-image: url("../assets/images/about-button.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 329px;
-    height: 385px;
-    margin: auto;
-}
-
-.about-left-image {
-    width: 329px;
-    height: 385px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.about-right-image {
-    width: 329px;
-    height: 385px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.about-power-image {
-    background-image: url("../assets/images/about-power.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 329px;
-    height: 35px;
-    margin: auto;
-}
-
-.about-left-line {
-    position: absolute;
-    left: 155px;
-    top: 215px;
-}
-
-.about-right-line {
-    position: absolute;
-    right: 170px;
-    top: -70px;
-}
-
-.about-first-line, .about-second-line {
-    display: none;
-}
-
-.div-with-vertical-line {
-    position: relative;
-    height: 45px;
-}
-
-.div-with-vertical-line::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 1px;
-    height: 100%;
-    background-color: #7C7C7C;
-    transform: translateX(-50%);
-}
-
-.vertical-line {
-    border-left: 1px solid #7C7C7C;
-    height: 50px;
-}
 
 .about {
     padding-left: 150px;
     padding-right: 150px;
 }
 
-.features {
-    padding-left: 250px;
-    padding-right: 250px;
-}
-
-.left-svg {
-    height: 400px;
-}
-
-.right-svg {
-    height: 312px;
-    width: 473px;
-    transform: scale(0.6);
-}
-
-@keyframes draw {
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-
-.polyline {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: draw 2.5s linear forwards;
-    stroke: #3f3f3fb0;
-    stroke-width: 8px
-}
-
-.right-polyline {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: draw 2.5s linear forwards;
-    stroke: #3f3f3fb0;
-    stroke-width: 12px;
-    animation-delay: 1.4s;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-}
 
 a:hover {
     color: #EF4444ed;
@@ -506,25 +363,6 @@ a:hover {
     cursor: pointer;
 }
 
-.partners-container {
-    display: flex;
-    justify-content: center;
-}
-.image-container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 985px;
-}
-
-.image-container img {
-    margin: 0 10px 0 10px;
-    width: 20%;
-}
-
-.partners-title {
-    text-align: center;
-    margin-bottom: 6px;
-}
 .about-right-light {
     background-image: url("../assets/images/benefit-right-light.png");
     background-repeat: no-repeat;
@@ -585,6 +423,7 @@ a:hover {
     position: relative;
     .fox-img{
         position: absolute;
+        width: 100%;
         top: 50%;
         left: 55%;
         transform: translate(-50%, -50%);
@@ -599,6 +438,11 @@ a:hover {
     -webkit-animation-delay: 1s;
 }
 
+@media only screen and (max-width: 1150px) {
+    .header-button-group>.header-button{
+        display: none;
+    }
+}
 @media only screen and (max-width: 600px) {
     .about-solar-logo .solar-img { width: 100%;}
     .fox-img{
@@ -622,25 +466,6 @@ a:hover {
         display: none;
     }*/
 
-    .header-button-group>.header-button{
-        display: none;
-    }
-    .modal-body {
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-    .modal-logo>img{
-        width: 119px;
-        margin-left: 0px;
-        margin-top: 0;
-    }
-    .modal-layout{
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .partners-title {
-        margin-top: 0px;
-    }
     .available-mobile{
         display: none;
     }
@@ -762,7 +587,6 @@ a:hover {
     }
 
     .header {
-        position: absolute;
         display: flex;
         flex-direction: column;
         justify-content: unset;
@@ -853,7 +677,6 @@ a:hover {
         flex-direction: column;
         text-align: center;
         align-items: center;
-        margin-top: 150px;
     }
     .developer-text{
         text-align: center;

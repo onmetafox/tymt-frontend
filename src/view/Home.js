@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import { Tooltip } from 'react-tooltip'
-// import "../styles/styles.css";
 import "../styles/font.css";
 import "../styles/colors.css";
 import blueImg from "../assets/images/temp-blue.svg";
@@ -8,7 +7,6 @@ import foxImg from "../assets/images/temp-fox.svg";
 import Download from "../components/DownCmp";
 import winIco from "../assets/icons/win-icon.svg";
 import linuxIco from "../assets/icons/linux-icon.svg";
-import macIco from "../assets/icons/mac-icon.svg";
 import macIcoGray from "../assets/icons/mac-icon-gray.svg";
 const Home = () => {
     function changeView () {
@@ -30,7 +28,6 @@ const Home = () => {
     }, []);
     return(
         <section id="home" className="home home-section">
-            <div className='mobile-bg'></div>
                 <div className="container ">
                 
                 {!mobileView && (

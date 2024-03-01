@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import "../styles/styles.css";
 import { useNavigate } from "react-router-dom";
 import Download from "../components/DownCmp";
 import logo from "../assets/logos/logo-transp.png";
