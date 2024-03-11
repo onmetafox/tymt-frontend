@@ -1,0 +1,22 @@
+.footer {
+    min-height: 145px;
+    background: linear-gradient(to bottom, #202020, #0B0B0B);
+    display: flex;
+    align-items: center;
+}
+.footer-terms, .twitter-logo{
+    justify-content: end;
+}
+.twitter-logo>img{
+    padding: 10px;
+    background: black;
+    border-radius: 10px
+}
+
+
+@media(max-width: 767px){
+    .footer-right, .footer-logo, .footer-terms, .twitter-logo{
+        justify-content: center;
+        padding: 20px;
+    }
+}

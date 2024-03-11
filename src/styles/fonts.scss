@@ -1,11 +1,18 @@
+@font-face {
+    font-family: "Cobe";
+    src: url("../fonts/cobe/Cobe\ Regular.ttf");
+}
 .bold {
     font-weight: bold;
 }
 .bold-semi {
-    font-weight: 400;
+    font-weight: 600;
 }
 .italic {
     font-style: italic;
+}
+.nowap{
+    white-space: nowrap;
 }
 .fs-16{
     font-family: 'Cobe';
