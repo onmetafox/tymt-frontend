@@ -1,10 +1,6 @@
-# tymt website
+# Tymt Website
 
-## What is tymt?
-
-tymt is a multi-chain game launcher and an environment for creating and publishing games.
-
-### How to run/build
+## How to run/build
 
 In the project directory, you can run:
 
