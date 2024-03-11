@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import MainLayout from './layout/MainLayout';
-import { Routes, Route} from "react-router-dom";
-import Error from './view/404';
+import MainLayout from './layout';
+import { Navigate, Routes, Route} from "react-router-dom";
+import Home from "./view/Home";
+// import Error from './view/404';
 // import Waitlist from './view/Waitlist';
 // import ContactForm from './view/ContactForm';
-import Loader from "./view/Loader";
+// import Loader from "./view/Loader";
 // import Privacy from "./view/Privacy";
 // import Terms from "./view/Terms";
 function App() {
@@ -23,11 +24,15 @@ function App() {
 
   return (
     <Routes>
-      {loading && <Route path="*" element={<Loader />}></Route>}
+      {/* {loading && <Route path="*" element={<Loader />}></Route>} */}
       {!loading && (
         <>
-          <Route path="/" element={<MainLayout />}></Route>
-          <Route path="*" element={<Error />}></Route>
+          <Route path="/" element={<MainLayout />}>
+            <Route path="/" element={<Navigate to="/home" replace />}>
+              <Route path="home" element={<Home />}></Route>
+            </Route>
+          </Route>
+          {/* <Route path="*" element={<Error />}></Route> */}
           {/* <Route path="waitlist" element={<Waitlist />}></Route>
           <Route path="contactForm" element={<ContactForm />}></Route>
           <Route path="privacy" element={<Privacy />}/>

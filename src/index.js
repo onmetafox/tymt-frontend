@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux'
-import store from './store/store';
+import store from './store';
 import { BrowserRouter } from "react-router-dom";
-import './styles/styles.css';
+import "./styles/app.scss"
 import 'bootstrap/dist/css/bootstrap.css';
 
 
