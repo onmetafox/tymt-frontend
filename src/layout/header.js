@@ -35,7 +35,6 @@ const Header = () => {
             } else {
                 setScroll(false);
             }
-            console.log(scroll);
         };
 
         window.addEventListener('scroll', handleScroll);
