@@ -1,15 +1,19 @@
 body{
-    background-color: black;
+    background-color: #262626;
 }
 .common-btn-win{
     padding: 10px 18px 13px 18px;
     border-radius: 14px;
     white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
 }
 .common-btn-linux{
     padding: 10px 18px 10px 18px;
     border-radius: 14px;
     white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
 }
 .black-btn{
     background-color: #161616;

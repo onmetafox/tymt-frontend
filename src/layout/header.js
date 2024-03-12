@@ -46,16 +46,16 @@ const Header = () => {
                     {/* </div> */}
                     {/* <div className='d-flex justify-content-end col-6'> */}
                         
-                        <Nav.Link as={Link} onClick={toggleNavbar} to="/" className={`${osBtn} black-btn fs-18 btn bold-semi white m-lr-10`}>
+                        <Nav.Link as={Link} onClick={toggleNavbar} to="/" className={`${osBtn} black-btn fs-18 header-btn bold-semi white m-lr-10`}>
                             Contact Us
                         </Nav.Link>
                         
                         {!isMobile && 
-                            <Nav.Link as={Link} onClick={toggleNavbar} to="/" className={`${osBtn} download-btn btn red-btn fs-18 bold-semi white m-lr-10`}>
+                            <Nav.Link as={Link} onClick={toggleNavbar} to="/" className={`${osBtn} download-btn header-btn red-btn fs-18 bold-semi white m-lr-10`}>
                                 Install and Play now
-                                <div className="dropdown-content">
+                                {/* <div className="dropdown-content">
                                     <DownloadComp />
-                                </div>
+                                </div> */}
                             </Nav.Link>
                         }
                     {/* </div> */}

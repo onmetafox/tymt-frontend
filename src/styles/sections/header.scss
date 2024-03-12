@@ -9,27 +9,27 @@
     z-index: 999;
 }
 
-.dropdown-content{
-    display: none;
-}
-.download-btn:hover .dropdown-content {display: block;}
-.download {
-    background: black;
-    background-color: black;
-    border-radius: 18px;
-    padding: 16px 24px 16px 24px;
-    position: absolute;
-    text-align: right;
-    top: 62px;
-    right: 0px;
-}
-.download-item >a> img {
-    padding-top: 5px;
-}
-.download-item:hover {
-    background-color: #7C7C7C33;
-    border-radius: 8px;
-}
+// .dropdown-content{
+//     display: none;
+// }
+// .download-btn:hover .dropdown-content {display: block;}
+// .download {
+//     background: black;
+//     background-color: black;
+//     border-radius: 18px;
+//     padding: 16px 24px 16px 24px;
+//     position: absolute;
+//     text-align: right;
+//     top: 62px;
+//     right: 0px;
+// }
+// .download-item >a> img {
+//     padding-top: 5px;
+// }
+// .download-item:hover {
+//     background-color: #7C7C7C33;
+//     border-radius: 8px;
+// }
 
 @media (max-width: 992px) {
     
@@ -49,7 +49,7 @@
     .navbar-collapse>.nav-link{
         padding: 10px;
     }
-    .navbar-collapse>.btn{
+    .navbar-collapse>.header-btn{
         margin: 10px;
     }
     

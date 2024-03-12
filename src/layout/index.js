@@ -7,7 +7,7 @@ const MainLayout = () => {
     return(
         <div id="app" className='body'>
             <Header/>
-            <div style={{minHeight: "calc(100vh - 145px)"}}>
+            <div style={{minHeight: "calc(100vh - 145px)", display:'flex', flexDirection: 'column',}}>
                 <Outlet />
             </div>
             <Footer/>
