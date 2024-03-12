@@ -41,15 +41,11 @@ const FeaturedSection = () =>{
                         <div className="fs-38 white">District 53</div>
                         <div className="ts-16 white">"District 53: Voxel Metropolis" is an immersive voxel-based strategy game set in a retro-futuristic cityscape, where players vie for dominance over an ever-evolving urban jungle of neon and steel.
                             In "District 53: Voxel Metropolis", you ...</div>
-                        <div className="row">
-                            <div className="col-10 p-lr-10">
-                                <div className={`${osBtn} download-btn fs-18 bold-semi white red-btn `} style={{display:"block"}}>
-                                    Install and Play now
-                                </div>
+                        <div className="d-flex justify-content-between" style={{gap:'20px'}}>
+                            <div className={`${osBtn} download-btn fs-18 bold-semi white red-btn `} style={{display:"block", width:"100%"}}>
+                                Install and Play now
                             </div>
-                            <div className="col-2 p-lr-10">
-                                <div className="border-circle-icon col-2"><img src={circlePlugIcon}/></div>
-                            </div>
+                            <div className="border-circle-icon col-2"><img src={circlePlugIcon}/></div>
                         </div>
                     </div>
                     <div className="d-flex">

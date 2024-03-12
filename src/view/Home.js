@@ -7,7 +7,7 @@ import { isMobile } from 'react-device-detect';
 import DownloadComp from '../components/downloadComp';
 import benefits from '../config/benefits';
 import HeaderCard from '../components/headerCard';
-
+import redImg from "../assets/images/red-effect.png";
 function getCarousel () {
     const { innerWidth: width, innerHeight: height } = window;
     if(width <= 1200 && height){
@@ -39,8 +39,9 @@ const HomeSection = () => {
     }, []);
     return(
         <section id="home" className="home home-section">
-            <div></div>
-            <div className='container flex-colum'>
+            <div className='red-effect'><img src={redImg}/></div>
+            <div className='mac-img'></div>
+            <div className='container flex-colum' style={{position:'relative', zIndex:10}}>
                 <div className='row detail-container'>
                     <div className='col-12'>
                         <div className='description'>

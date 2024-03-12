@@ -1,0 +1,52 @@
+.install-section{
+    background-image: url("../../assets/images/install-bg.svg");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+}
+.launch-container{
+    padding-top: 20px;
+    background: linear-gradient(to bottom right, #53DFF3 -400%, #191919 100%);
+    border-radius: 16px;
+}
+.step-container{
+    border: 2px solid;
+    border-radius: 16px;
+    padding: 16px;
+    border-color: #53E1F240;
+    background: linear-gradient(to left, #53DFF3 -400%, #19191970 100%);
+}
+.developer-container, .publisher-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    border-radius: 16px;
+    background: #8080801A;
+    background-blend-mode: luminosity;
+}
+.developer-container img, .publisher-container img{
+    height: 128px;
+}
+.developer-container {
+    background-image: radial-gradient(farthest-corner at -35% 20%, rgba(239, 68, 68, 0.3) 10%, rgba(128, 128, 128, 0.1) 40%);
+}
+.publisher-container{
+    background-image: radial-gradient(farthest-corner at -35% 20%, rgba(83, 223, 243, 0.3) 10%, rgba(128, 128, 128, 0.1) 40%);
+}
+@media (max-width: 575.98px) {
+    .gap-20{
+        gap: 20px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .gap-20{
+        gap: 20px;
+    }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .gap-20{
+        gap: 20px;
+    }
+}

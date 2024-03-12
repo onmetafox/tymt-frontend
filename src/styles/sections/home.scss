@@ -1,5 +1,6 @@
 .home-section{
-    background-image: url("../../assets/images/macbook-lg.svg");
+    // background-image: url("../../assets/images/macbook-lg.svg");
+    background-image: radial-gradient(farthest-corner at  50% 0%, #53DFF35A 1%, transparent 50%);
     background-position: top;
     background-size: cover;
 }
@@ -12,6 +13,56 @@
 .description{
     line-height: 0.9;
 }
+.red-gradient-smooth{
+    background-image: radial-gradient(farthest-corner at 0% 0%, #EF444432 1%, #8080801A 50%);
+    animation: redBlink 8s infinite, redTransfer 9s infinite;
+    border: solid 1px #8080801A;
+}
+.purple-gradient-smooth{
+    background-image: radial-gradient(farthest-corner at  80% 10%, #9146F432 1%, #8080801A 50%);
+    animation: purpleBlink 8s infinite, purpleTransfer 7s infinite;
+    border: solid 1px #8080801A;
+}
+
+.blue-gradient-smooth{
+    background-image: radial-gradient(farthest-corner at  80% 70%, #53DFF332 1%, #8080801A 50%);
+    animation: blueBlink 8s infinite, blueTransfer 6s infinite;
+    border: solid 1px #8080801A;
+}
+.yellow-gradient-smooth{
+    background-image: radial-gradient(farthest-corner at  8% 70%, #FFD96632 1%, #8080801A 50%);
+    animation: yellowBlink 8s infinite, yellowTransfer 8s infinite;
+    border: solid 1px #8080801A;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+.header-card-image{
+    width: 128px;
+    height: 128px;
+}
+.red-effect{
+    position: absolute;
+    right: 0px;
+}
+.mac-img{
+    position: absolute;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 150%;
+}
 .header-card{
     display: flex;
     flex-direction: column;
@@ -21,44 +72,142 @@
     align-items: center;
     border-radius: 16px;
     min-height: 315px;
-    background-color: transparent;
-    border: double 1px transparent;
-    background-image: linear-gradient(#232323, #141212a1), radial-gradient(circle at top left, rgba(255, 255, 255, 0.1) 1.69%, rgba(255, 255, 255, 0.4) 50.48%, rgba(255, 255, 255, 0.1) 98.31%);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-
 }
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-    .home-section{
+    .mac-img{
         background-image: url("../../assets/images/macbook-sm.svg");
     }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-    .home-section{
+    .mac-img{
         background-image: url("../../assets/images/macbook-sm.svg");
     }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .home-section{
+    .mac-img{
         background-image: url("../../assets/images/macbook-md.svg");
     }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    .home-section{
+    .mac-img{
         background-image: url("../../assets/images/macbook-lg.svg");
     }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    .home-section{
+    .mac-img{
         background-image: url("../../assets/images/macbook-xl.svg");
+    }
+}
+
+
+
+@keyframes redBlink {
+    0%, 50%, 100% {
+        background-position: 80% 70%;
+        background-size: 100% 100%;
+    }
+    25%, 75% {
+        background-position: 20% 30%;
+        background-size: 120% 120%;
+    }
+}
+  
+@keyframes redTransfer {
+    0%, 25% {
+        background-image: radial-gradient(farthest-corner at 20% 70%, #EF444432 5%, #8080801A 50%);
+    }
+    25%, 50% {
+        background-image: radial-gradient(farthest-corner at 100% 0%, #EF444432 5%, #8080801A 50%);
+    }
+    50%, 75% {
+        background-image: radial-gradient(farthest-corner at 80% 70%, #EF444432 5%, #8080801A 50%);
+    }
+    100% {
+        background-image: radial-gradient(farthest-corner at 10% 20%, #EF444432 5%, #8080801A 50%);
+    }
+}
+@keyframes purpleBlink {
+    0%, 50%, 100% {
+        background-position: 10% 70%;
+        background-size: 100% 100%;
+    }
+    25%, 75% {
+        background-position: 90% 30%;
+        background-size: 120% 120%;
+    }
+}
+  
+@keyframes purpleTransfer {
+    0%, 25% {
+        background-image: radial-gradient(farthest-corner at 20% 70%, #9146F432 5%, #8080801A 50%);
+    }
+    25%, 50% {
+        background-image: radial-gradient(farthest-corner at 100% 0%, #9146F432 5%, #8080801A 50%);
+    }
+    50%, 75% {
+        background-image: radial-gradient(farthest-corner at 80% 70%, #9146F432 5%, #8080801A 50%);
+    }
+    100% {
+        background-image: radial-gradient(farthest-corner at 10% 20%, #9146F432 5%, #8080801A 50%);
+    }
+}
+@keyframes blueBlink {
+    0%, 50%, 100% {
+        background-position: 10% 10%;
+        background-size: 100% 100%;
+    }
+    25%, 75% {
+        background-position: 90% 90%;
+        background-size: 120% 120%;
+    }
+}
+  
+@keyframes blueTransfer {
+    0%, 25% {
+        background-image: radial-gradient(farthest-corner at 20% 70%, #53DFF332 5%, #8080801A 50%);
+    }
+    25%, 50% {
+        background-image: radial-gradient(farthest-corner at 100% 0%, #53DFF332 5%, #8080801A 50%);
+    }
+    50%, 75% {
+        background-image: radial-gradient(farthest-corner at 80% 70%, #53DFF332 5%, #8080801A 50%);
+    }
+    100% {
+        background-image: radial-gradient(farthest-corner at 10% 20%, #53DFF332 5%, #8080801A 50%);
+    }
+}
+@keyframes yellowBlink {
+    0%, 50%, 100% {
+        background-position: 40% 70%;
+        background-size: 100% 100%;
+    }
+    25%, 75% {
+        background-position: 60% 30%;
+        background-size: 120% 120%;
+    }
+}
+  
+@keyframes yellowTransfer {
+    0%, 25% {
+        background-image: radial-gradient(farthest-corner at 20% 70%, #FFD96632 5%, #8080801A 50%);
+    }
+    25%, 50% {
+        background-image: radial-gradient(farthest-corner at 100% 0%, #FFD96632 5%, #8080801A 50%);
+    }
+    50%, 75% {
+        background-image: radial-gradient(farthest-corner at 80% 70%, #FFD96632 5%, #8080801A 50%);
+    }
+    100% {
+        background-image: radial-gradient(farthest-corner at 10% 20%, #FFD96632 5%, #8080801A 50%);
     }
 }

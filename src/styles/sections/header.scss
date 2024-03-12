@@ -15,13 +15,13 @@
     border-radius: 16px;
     // border: 1px solid;
     // border-image-source: linear-gradient(92deg, rgba(255, 255, 255, 0.1) 1.69%, rgba(255, 255, 255, 0.4) 50.48%, rgba(255, 255, 255, 0.1) 98.31%);
-    
+    background-color: transparent;
+    border: double 1px transparent;
+    background-image: linear-gradient(transparent, transparent), radial-gradient(circle at top left, rgba(255, 255, 255, 0.1) 1.69%, rgba(255, 255, 255, 0.4) 50.48%, rgba(255, 255, 255, 0.1) 98.31%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
 }
 
-.header-card-image{
-    width: 128px;
-    height: 128px;
-}
 // .dropdown-content{
 //     display: none;
 // }
