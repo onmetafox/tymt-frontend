@@ -1,7 +1,8 @@
 {
-  "name": "tymt-frontend",
-  "version": "0.1.0",
+  "name": "tymt-website-frontend",
+  "version": "0.2.0",
   "private": true,
+  "author": "solar dokdo team",
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@reduxjs/toolkit": "^1.9.6",
