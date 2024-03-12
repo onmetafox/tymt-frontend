@@ -2,7 +2,8 @@ import React, {useEffect, useState} from 'react';
 import { OS } from '../utils/getEnv';
 import { isMobile } from 'react-device-detect';
 import DownloadComp from '../components/downloadComp';
-
+import benefits from '../config/benefits';
+import HeaderCard from '../components/headerCard';
 const HomeSection = () => {
     const [os] = useState(OS(window));
     const [osBtn, setOsBtn] = useState("common-btn-win");
@@ -16,8 +17,8 @@ const HomeSection = () => {
     return(
         <section id="home" className="home home-section">
             <div className='container flex-colum'>
-                <div className='row'>
-                    <div className='col-6'>
+                <div className='row detail-container'>
+                    <div className='col-lg-6 col-md-6 col-sm-12'>
                         <div className='description'>
                             <div className='fs-96 bold italic white'>Welcome to</div> 
                             <span className='fs-96 bold italic blue'>the future</span>
@@ -37,7 +38,13 @@ const HomeSection = () => {
                         }
                     </div>
                 </div>
-                <div className='row'></div>
+                <div className='row card-container'>
+                    {benefits.map((item, index)=> (
+                        <div className='col-3'>
+                            <HeaderCard data={item} index = {index}/>
+                        </div>
+                    ))}
+                </div>
             </div>
         </section>
     )

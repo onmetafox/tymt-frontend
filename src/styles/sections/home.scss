@@ -1,7 +1,49 @@
 .home-section{
-    margin-top:50px
+    background-image: url("../../assets/images/macbook-lg.svg");
+    background-position: top;
+    background-size: cover;
 }
-
+.detail-container{
+    padding-top: 150px;
+}
+.card-container {
+    padding-top: 150px;
+}
 .description{
     line-height: 0.9;
+}
+.header-card{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 16px;
+    background: #8080801A;
+
+}
+
+@media(max-width: 576px){
+
+}
+@media(max-width: 768px){
+    .home-section{
+        background-image: url("../../assets/images/macbook-sm.svg");
+    }
+}
+@media(max-width: 992px){
+    .home-section{
+        background-image: url("../../assets/images/macbook-md.svg");
+    }
+}
+@media(max-width: 1200px){
+    .home-section{
+        background-image: url("../../assets/images/macbook-lg.svg");
+    }
+}
+@media(min-width: 1400px){
+    .home-section{
+        background-image: url("../../assets/images/macbook-xl.svg");
+    }
 }
