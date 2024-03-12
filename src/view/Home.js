@@ -18,14 +18,14 @@ const HomeSection = () => {
         <section id="home" className="home home-section">
             <div className='container flex-colum'>
                 <div className='row detail-container'>
-                    <div className='col-lg-6 col-md-6 col-sm-12'>
+                    <div className='col-12'>
                         <div className='description'>
-                            <div className='fs-96 bold italic white'>Welcome to</div> 
-                            <span className='fs-96 bold italic blue'>the future</span>
-                            <span className='fs-96 bold italic white'> of</span>
-                            <div className='fs-96 bold italic white'>gaming!</div> 
+                            <div className='fs-96 bold italic white nowrap'>Welcome to</div> 
+                            <span className='fs-96 bold italic blue nowrap'>the future</span>
+                            <span className='fs-96 bold italic white nowrap'> of</span>
+                            <div className='fs-96 bold italic white nowrap'>gaming!</div> 
                         </div>
-                        <div className='fs-20 white m-tb-20'>
+                        <div className='fs-20 white m-tb-20' style={{maxWidth: '550px'}}>
                             Tymt is a multi-chain game launcher and an environment fo creating and publishing games
                         </div>
                         {!isMobile && 

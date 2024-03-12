@@ -6,12 +6,12 @@
     font-weight: bold;
 }
 .bold-semi {
-    font-weight: 600;
+    font-weight: 400;
 }
 .italic {
     font-style: italic;
 }
-.nowap{
+.nowrap{
     white-space: nowrap;
 }
 .fs-16{
@@ -41,4 +41,36 @@
 .fs-96{
     font-family: 'Cobe';
     font-size: 96px;
+}
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .fs-96{
+        font-size: 48px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .fs-96{
+        font-size: 48px;
+}   
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .fs-96{
+        font-size: 66px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    body {
+        background-color: orange;
+    }
 }

@@ -9,7 +9,7 @@ const Footer = () => {
                 </div>
                 <div className="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center align-items-center">
                     <div className="m-lr-10 fs-16 white">About</div>
-                    <div className="m-lr-10 fs-16 white nowap">How it Works</div>
+                    <div className="m-lr-10 fs-16 white norwap">How it Works</div>
                     <div className="m-lr-10 fs-16 white">Publishers</div>
                 </div>
                 <div className="col-lg-4 col-md-4 col-sm-12 content-center twitter-logo">

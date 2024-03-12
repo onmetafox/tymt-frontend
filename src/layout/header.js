@@ -14,6 +14,7 @@ import { OS } from "../utils/getEnv";
 import DownloadComp from "../components/downloadComp";
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [scroll, setScroll] = useState(false)
     const [osBtn, setOsBtn] = useState("common-btn-win");
     const toggleNavbar = () => {
         setIsOpen(!isOpen);
@@ -27,8 +28,23 @@ const Header = () => {
             setOsBtn("common-btn-linux");
         }
     },os)
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setScroll(true);
+            } else {
+                setScroll(false);
+            }
+            console.log(scroll);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     return (
-        <Navbar variant="dark" expand="lg" className={`container header-container navbar-a ${isOpen ? 'active' : ''}`} expanded = {isOpen}>
+        <Navbar variant="dark" expand="lg" className={`container header-container navbar-a ${isOpen ? 'active' : ''} ${scroll? 'scroll-header': ''}`} expanded = {isOpen}>
             {/* <div className='row'> */}
                 <Navbar.Brand as={Link} to="/">
                     <img
