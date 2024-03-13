@@ -1,6 +1,35 @@
 body{
     background-color: #222222;
+    overflow: auto;
+    -ms-overflow-style: none; /* Hides scrollbar for IE and Edge */
+    scrollbar-width: none; /* Hides scrollbar for Firefox */
+
+    /* Hide scrollbar for Chrome, Safari, and Opera */
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
+::-webkit-scrollbar {
+    display: none;
+    max-width: 8px;
+    max-height: 8px;
+    background: #222;
+    border-radius: 7px;
+  }
+  
+  ::-webkit-scrollbar-track,
+  ::-webkit-scrollbar-corner {
+    background: #333333;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #222;
+    border-radius: 7px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #111;
+  }
 .common-btn-win{
     padding: 10px 18px 13px 18px;
     border-radius: 16px;
@@ -9,6 +38,9 @@ body{
     display: inline-block;
     text-align: center;
     position: relative;
+    &:focus{
+        color: white;
+    }
     
 }
 .common-btn-linux{
@@ -19,6 +51,9 @@ body{
     display: inline-block;
     text-align: center;
     position: relative;
+    &:focus{
+        color: white;
+    }
 }
 .gradient-border{
     background-color: transparent;

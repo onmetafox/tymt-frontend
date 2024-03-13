@@ -46,10 +46,15 @@
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1399.98px){
     
     .coming-soon-container{
         background-image: url("../../assets/images/coming-xl.png");
         min-height: 440px;
+    }
+}
+@media(min-width: 1400px){
+    .coming-soon-container{
+        min-height: 645px;
     }
 }

@@ -4,6 +4,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 50px;
+    position: relative;
 }
 .launch-container{
     padding-top: 20px;
@@ -56,6 +57,11 @@
 .install-section .download-item:hover {
     background-color: #7C7C7C33;
     border-radius: 8px;
+}
+.left-red-effect{
+    position: absolute;
+    left: 0px;
+    top: -500px;
 }
 @media (max-width: 575.98px) {
     .gap-20{

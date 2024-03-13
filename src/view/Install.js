@@ -6,6 +6,7 @@ import launcherImg from "../assets/images/launcher.png";
 import publisherImg from "../assets/images/publisher.svg";
 import developerImg from "../assets/images/developer.svg";
 import DownloadComp from "../components/downloadComp";
+import leftEffectImg from "../assets/images/left-red-effect.png";
 
 const InstallSection = () => {
     const [os] = useState(OS(window));
@@ -19,6 +20,7 @@ const InstallSection = () => {
         }
     },[os]);
     return <section id="how-to-install" className="install-section">
+        <div className="left-red-effect"><img src={leftEffectImg} alt="left effect"/></div>
         <div className="container d-flex flex-column" style={{gap:'30px'}}>
             <div className="launch-container">
                 <div className="row">
