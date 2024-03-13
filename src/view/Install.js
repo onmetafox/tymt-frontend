@@ -20,7 +20,7 @@ const InstallSection = () => {
         }
     },[os]);
     return <section id="how-to-install" className="install-section">
-        <div className="left-red-effect"><img src={leftEffectImg} alt="left effect"/></div>
+        <div className="left-red-effect"><img src={leftEffectImg} alt="left effect" width={'100%'}/></div>
         <div className="container d-flex flex-column" style={{gap:'30px'}}>
             <div className="launch-container">
                 <div className="row">
