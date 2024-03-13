@@ -91,4 +91,30 @@ body{
 .border-32{
     border-radius: 32px;
 }
-
+.modal-container{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.modal-content{
+    background: #222222F0;
+    background-blend-mode: luminosity;
+    border-radius: 16px;
+    padding: 24px;
+}
+.form-control, .form-select{
+    background: #0D0D0D66;
+    border: none;
+    font-family: 'Cobe';
+    font-size: 16px;
+    color:white;
+    border-radius: 8px;
+    &:focus{
+        background: #0D0D0D66;
+        color:white;
+    }
+    &::placeholder{
+        color: #FFFFFF4D;
+    }
+}
