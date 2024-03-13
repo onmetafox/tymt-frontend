@@ -104,8 +104,8 @@ const InstallSection = () => {
                     <div className="col-lg-6 col-sm-12">
                         <div className="publisher-container">
                             <div className="d-flex flex-column justify-content-between">
-                                <div className="fs-24 white">If youa re a Publisher</div>
-                                <div className="fs-16 white-oppacity">Simply contact us and publsih your game</div>
+                                <div className="fs-24 white">If you are a Publisher</div>
+                                <div className="fs-16 white-oppacity">Simply contact us and publish your game</div>
                                 <div>
                                     <div className={`${osBtn} black-btn fs-18 header-btn bold-semi white`}>Contact Us</div>
                                 </div>
@@ -116,8 +116,8 @@ const InstallSection = () => {
                     <div className="col-lg-6 col-sm-12">
                         <div className="developer-container">
                             <div className="d-flex flex-column justify-content-between">
-                                <div className="fs-24 white">If youa re a Publisher</div>
-                                <div className="fs-16 white-oppacity">Simply contact us and publsih your game</div>
+                                <div className="fs-24 white">If you are a Publisher</div>
+                                <div className="fs-16 white-oppacity">Simply contact us and publish your game</div>
                                 <div>
                                     <div className={`${osBtn} black-btn fs-18 header-btn bold-semi white`}>Go to GitHub</div>
                                 </div>
