@@ -34,6 +34,29 @@
 .publisher-container{
     background-image: radial-gradient(farthest-corner at -35% 20%, rgba(83, 223, 243, 0.3) 10%, rgba(128, 128, 128, 0.1) 40%);
 }
+
+
+.install-section .dropdown-content{
+    display: none;
+}
+.install-section .download-btn:hover .dropdown-content {display: block;}
+.install-section .download {
+    background: #8080801A;
+    background-blend-mode: luminosity;
+    border-radius: 18px;
+    padding: 16px 24px 16px 24px;
+    position: absolute;
+    text-align: right;
+    top: 50px;
+    left: 0px;
+}
+.install-section .download-item >a> img {
+    padding-top: 5px;
+}
+.install-section .download-item:hover {
+    background-color: #7C7C7C33;
+    border-radius: 8px;
+}
 @media (max-width: 575.98px) {
     .gap-20{
         gap: 20px;

@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="container">
             <div className="row">
                 <div className="col-lg-4 col-md-4 col-sm-12 footer-logo content-center">
-                    <img src={logoImg} width="85px"/>
+                    <img src={logoImg} width="85px" alt="logo"/>
                 </div>
                 <div className="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center align-items-center">
                     <div className="m-lr-10 fs-16 white">About</div>
@@ -13,7 +13,7 @@ const Footer = () => {
                     <div className="m-lr-10 fs-16 white">Publishers</div>
                 </div>
                 <div className="col-lg-4 col-md-4 col-sm-12 content-center twitter-logo">
-                    <img src={twiterIcon}/>
+                    <img src={twiterIcon} alt="twitter"/>
                 </div>
             </div>
             <div className="row m-t-20">

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { isMobile } from 'react-device-detect';
 import { Link } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
 import logo from "../assets/logos/logo.svg";
 import menuIcon from "../assets/icons/menu-icon.svg";
@@ -19,7 +19,7 @@ const Header = () => {
     const toggleNavbar = () => {
         setIsOpen(!isOpen);
     };
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     const [os] = useState(OS(window));
     useEffect(()=>{
         if(os==="Windows OS"){
@@ -27,7 +27,7 @@ const Header = () => {
         }else{
             setOsBtn("common-btn-linux");
         }
-    },os)
+    },[os])
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 100) {
@@ -41,10 +41,9 @@ const Header = () => {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    });
     return (
         <Navbar variant="dark" expand="lg" className={`container header-container navbar-a ${isOpen ? 'active' : ''} ${scroll? 'scroll-header': ''}`} expanded = {isOpen}>
-            {/* <div className='row'> */}
                 <Navbar.Brand as={Link} to="/">
                     <img
                         src={logo}
@@ -54,23 +53,18 @@ const Header = () => {
                 </Navbar.Brand>
             
                 <Navbar.Collapse id="basic-navbar-nav" className='justify-content-end'>
-                    {/* <div className='d-flex justify-content-center col-6'> */}
                         <Nav.Link as={Link} onClick={toggleNavbar} to="/" className='fs-16 white m-lr-10'>About</Nav.Link>
                         <Nav.Link as={Link} onClick={toggleNavbar} to="/" className='fs-16 white m-lr-10'>How it Works</Nav.Link>
                         <Nav.Link as={Link} onClick={toggleNavbar} to="/" className='fs-16 white m-lr-10'>Publishers</Nav.Link>
-                    {/* </div> */}
-                    {/* <div className='d-flex justify-content-end col-6'> */}
-                        
                         <Nav.Link as={Link} onClick={toggleNavbar} to="/" className={`${osBtn} black-btn fs-18 header-btn bold-semi white m-lr-10`}>
                             Contact Us
                         </Nav.Link>
-                        
                         {!isMobile && 
                             <Nav.Link as={Link} onClick={toggleNavbar} to="/" className={`${osBtn} download-btn header-btn red-btn fs-18 bold-semi white m-lr-10`}>
                                 Install and Play now
-                                {/* <div className="dropdown-content">
+                                <div className="dropdown-content">
                                     <DownloadComp />
-                                </div> */}
+                                </div>
                             </Nav.Link>
                         }
                     {/* </div> */}
@@ -86,7 +80,6 @@ const Header = () => {
                     )}
                     </Navbar.Toggle>
                 </Nav>
-            {/* </div> */}
         </Navbar>
     );
 }

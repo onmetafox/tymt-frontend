@@ -22,27 +22,27 @@
     background-clip: padding-box, border-box;
 }
 
-// .dropdown-content{
-//     display: none;
-// }
-// .download-btn:hover .dropdown-content {display: block;}
-// .download {
-//     background: black;
-//     background-color: black;
-//     border-radius: 18px;
-//     padding: 16px 24px 16px 24px;
-//     position: absolute;
-//     text-align: right;
-//     top: 62px;
-//     right: 0px;
-// }
-// .download-item >a> img {
-//     padding-top: 5px;
-// }
-// .download-item:hover {
-//     background-color: #7C7C7C33;
-//     border-radius: 8px;
-// }
+.header-container .dropdown-content{
+    display: none;
+}
+.header-container .download-btn:hover .dropdown-content {display: block;}
+.header-container .download {
+    background: #8080801A;
+    background-blend-mode: luminosity;
+    border-radius: 18px;
+    padding: 16px 24px 16px 24px;
+    position: absolute;
+    text-align: right;
+    top: 50px;
+    right: 0px;
+}
+.header-container .download-item >a> img {
+    padding-top: 5px;
+}
+.header-container .download-item:hover {
+    background-color: #7C7C7C33;
+    border-radius: 8px;
+}
 
 @media (max-width: 992px) {
     

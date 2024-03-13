@@ -66,18 +66,44 @@
 .header-card{
     display: flex;
     flex-direction: column;
-    padding: 35px;
+    padding: 20px;
+    margin: 5px;
     justify-content: start;
     text-align: center;
     align-items: center;
     border-radius: 16px;
     min-height: 315px;
+    min-width: 245px;
 }
 
+.home-section .dropdown-content{
+    display: none;
+}
+.home-section .download-btn:hover .dropdown-content {display: block;}
+.home-section .download {
+    background: #8080801A;
+    background-blend-mode: luminosity;
+    border-radius: 18px;
+    padding: 16px 24px 16px 24px;
+    position: absolute;
+    text-align: right;
+    top: 50px;
+    left: 0px;
+}
+.home-section .download-item >a> img {
+    padding-top: 5px;
+}
+.home-section .download-item:hover {
+    background-color: #7C7C7C33;
+    border-radius: 8px;
+}
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     .mac-img{
         background-image: url("../../assets/images/macbook-sm.svg");
+    }
+    .header-card{
+        padding: 10px;
     }
 }
 

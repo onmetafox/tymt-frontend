@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import circlePlugIcon from "../assets/icons/circle-plus-icon.svg";
+import DownloadComp from "../components/downloadComp";
 import { OS } from '../utils/getEnv';
 const FeaturedSection = () =>{
     const [os] = useState(OS(window));
@@ -10,7 +11,7 @@ const FeaturedSection = () =>{
         }else{
             setOsBtn("common-btn-linux");
         }
-    },os)
+    },[os])
     return <section id="featured" className="featured-section container">
         <div className="row">
             <div className="fs-48 bold-semi white italic">Featured Games</div>
@@ -24,16 +25,14 @@ const FeaturedSection = () =>{
                 <div className={`${osBtn} download-btn fs-18 bold-semi white gray-btn  m-tb-10 gradient-border`} >
                         <div className="d-flex align-item-center text-center" style={{gap: '10px'}}>
                             <span>Publish your game</span>
-                            <img src={circlePlugIcon}/>
+                            <img src={circlePlugIcon} alt ="circle plus"/>
                         </div>
                     </div>
                 </div>
         </div>
         <div className="row">
             <div className="col-lg-8 col-md-6 col-sm-12">
-                <div className="border-32 game-screen">
-                    <img />
-                </div>
+                <div className="border-32 game-screen"></div>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-12" style={{textAlign:"right"}}>
                 <div className="d-flex flex-column"  style={{gap:'20px'}}>
@@ -44,8 +43,11 @@ const FeaturedSection = () =>{
                         <div className="d-flex justify-content-between" style={{gap:'20px'}}>
                             <div className={`${osBtn} download-btn fs-18 bold-semi white red-btn `} style={{display:"block", width:"100%"}}>
                                 Install and Play now
+                                <div className="dropdown-content">
+                                    <DownloadComp />
+                                </div>
                             </div>
-                            <div className="border-circle-icon col-2"><img src={circlePlugIcon}/></div>
+                            <div className="border-circle-icon col-2"><img src={circlePlugIcon} alt = "circle plus"/></div>
                         </div>
                     </div>
                     <div className="d-flex">

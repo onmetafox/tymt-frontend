@@ -5,6 +5,8 @@ import { OS } from '../utils/getEnv';
 import launcherImg from "../assets/images/launcher.png";
 import publisherImg from "../assets/images/publisher.svg";
 import developerImg from "../assets/images/developer.svg";
+import DownloadComp from "../components/downloadComp";
+
 const InstallSection = () => {
     const [os] = useState(OS(window));
     const [osBtn, setOsBtn] = useState("common-btn-win");
@@ -15,13 +17,13 @@ const InstallSection = () => {
         }else{
             setOsBtn("common-btn-linux");
         }
-    },os);
+    },[os]);
     return <section id="how-to-install" className="install-section">
         <div className="container d-flex flex-column" style={{gap:'30px'}}>
             <div className="launch-container">
                 <div className="row">
                     <div className="col-lg-6 col-md-6 col-sm-12">
-                        <img src={launcherImg} width={'100%'}/>
+                        <img src={launcherImg} width={'100%'} alt="launcher"/>
                     </div>
                     <div className="col-lg-6 col-md-6 col-sm-12 p-30 d-flex flex-column justify-content-around">
                         <div style={{lineHeight:'35px'}}>
@@ -29,7 +31,7 @@ const InstallSection = () => {
                             <div className="fs-38 red">Your Wallet</div>
                         </div>
                         <div className="fs-16 white">In order to enjoy all the benefits of Web3 gaming - you need a “blockchain id” - an “address” - just like you do when you install a 
-                            <a className="blue">crypto wallet</a>.
+                            &nbsp; <a href="https://github.com" className="blue">crypto wallet</a>.
                             When you Sign-in to tymt - it will automatically create 5 such “addresses”: on Solar (SXP), ERC-20 (ETH), BSC (BNB), Solana (SOL), Polygon (MATIC), and Bitcoin chains.
                             You can easily access and manage them from your Wallet in order to Pay with any currency - and Play on any chain.
                         </div>
@@ -37,9 +39,9 @@ const InstallSection = () => {
                             <div>
                                 <div className={`${osBtn} download-btn red-btn fs-18 bold-semi white`}>
                                     Install and Play now
-                                    {/* <div className="dropdown-content">
+                                    <div className="dropdown-content">
                                         <DownloadComp />
-                                    </div> */}
+                                    </div>
                                 </div>
                             </div>
                         }
@@ -106,7 +108,7 @@ const InstallSection = () => {
                                     <div className={`${osBtn} black-btn fs-18 header-btn bold-semi white`}>Contact Us</div>
                                 </div>
                             </div>
-                            <div><img src={publisherImg}/></div>
+                            <div><img src={publisherImg} alt="publisher"/></div>
                         </div>
                     </div>
                     <div className="col-lg-6 col-sm-12">
@@ -118,7 +120,7 @@ const InstallSection = () => {
                                     <div className={`${osBtn} black-btn fs-18 header-btn bold-semi white`}>Go to GitHub</div>
                                 </div>
                             </div>
-                            <div><img src={developerImg}/></div>
+                            <div><img src={developerImg} alt="developer"/></div>
                         </div>
                     </div>
                 </div>
