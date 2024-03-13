@@ -21,7 +21,8 @@ const customStyles = {
     }),
     menu: (provided) => ({
       ...provided,
-      background: '#0D0D0D66',
+      background: 'rgb(143 142 142 / 80%)',
+      backdrop: 'blur(100px)',
       borderRadius: 16,
       border: 'none',
       overflow: 'hidden',
@@ -29,9 +30,11 @@ const customStyles = {
     }),
     option: (provided, state) => ({
       ...provided,
-      background: state.isSelected ? '#282828' : state.isFocused ? '#282828' : '#111',
+      // background: state.isSelected ? '#282828' : state.isFocused ? '#282828' : '#111',
       margin: '5px 0px 5px 0px',
       borderRadius: 8,
+      background: 'rgb(143 142 142 / 29%)',
+      backdrop: 'blur(100px)',
       color: 'white',
       '&:hover': {
         background: '#555',

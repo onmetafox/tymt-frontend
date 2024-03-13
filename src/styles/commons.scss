@@ -98,10 +98,11 @@ body{
     gap: 24px;
 }
 .modal-content{
-    background: #222222F0;
+    background: rgb(143 142 142 / 29%);
     background-blend-mode: luminosity;
     border-radius: 16px;
     padding: 24px;
+    backdrop-filter: blur(100px);
 }
 .form-control, .form-select{
     background: #0D0D0D66;
@@ -117,4 +118,8 @@ body{
     &::placeholder{
         color: #FFFFFF4D;
     }
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
 }

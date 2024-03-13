@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { isMobile } from 'react-device-detect';
 
 import { OS } from '../utils/getEnv';
@@ -7,11 +7,14 @@ import publisherImg from "../assets/images/publisher.svg";
 import developerImg from "../assets/images/developer.svg";
 import DownloadComp from "../components/downloadComp";
 import leftEffectImg from "../assets/images/left-red-effect.png";
-
+import ModalComp from "../components/modalComp";
 const InstallSection = () => {
     const [os] = useState(OS(window));
     const [osBtn, setOsBtn] = useState("common-btn-win");
-
+    const [show, setShow] = useState(false);
+    const setOpen = useCallback((status)=>{
+        setShow(status)
+    }, [setShow]);
     useEffect(()=>{
         if(os==="Windows OS"){
             setOsBtn("common-btn-win");
@@ -32,8 +35,8 @@ const InstallSection = () => {
                             <div className="fs-38 white">Your Launcher</div>
                             <div className="fs-38 red">Your Wallet</div>
                         </div>
-                        <div className="fs-16 white">In order to enjoy all the benefits of Web3 gaming - you need a “blockchain id” - an “address” - just like you do when you install a 
-                            &nbsp; <a href="https://github.com" className="blue">crypto wallet</a>.
+                        <div className="fs-16 white">In order to enjoy all the benefits of Web3 gaming - you need a “blockchain id” - an “address” - just like you do when you install
+                         a <a href="https://solar.org/wallets" target="_blank" rel="noreferrer" className="blue">crypto wallet</a>. 
                             When you Sign-in to tymt - it will automatically create 5 such “addresses”: on Solar (SXP), ERC-20 (ETH), BSC (BNB), Solana (SOL), Polygon (MATIC), and Bitcoin chains.
                             You can easily access and manage them from your Wallet in order to Pay with any currency - and Play on any chain.
                         </div>
@@ -103,11 +106,11 @@ const InstallSection = () => {
                 <div className="row gap-20">
                     <div className="col-lg-6 col-sm-12">
                         <div className="publisher-container">
-                            <div className="d-flex flex-column justify-content-between">
+                            <div className="d-flex flex-column justify-content-between" style={{gap: "10px"}}>
                                 <div className="fs-24 white">If you are a Publisher</div>
-                                <div className="fs-16 white-oppacity">Simply contact us and publish your game</div>
-                                <div>
-                                    <div className={`${osBtn} black-btn fs-18 header-btn bold-semi white`}>Contact Us</div>
+                                <div className="fs-16 white">Simply contact us and publsih your game</div>
+                                <div>   
+                                    <div onClick={()=>setShow(true)} className={`${osBtn} black-btn fs-18 header-btn bold-semi white`}>Contact Us</div>
                                 </div>
                             </div>
                             <div><img src={publisherImg} alt="publisher"/></div>
@@ -115,11 +118,11 @@ const InstallSection = () => {
                     </div>
                     <div className="col-lg-6 col-sm-12">
                         <div className="developer-container">
-                            <div className="d-flex flex-column justify-content-between">
-                                <div className="fs-24 white">If you are a Publisher</div>
-                                <div className="fs-16 white-oppacity">Simply contact us and publish your game</div>
+                            <div className="d-flex flex-column justify-content-between" style={{gap: "10px"}}>
+                                <div className="fs-24 white">If you are a Developer</div>
+                                <div className="fs-16 white">Visit our GitHub repository for all documentation and SDK</div>
                                 <div>
-                                    <div className={`${osBtn} black-btn fs-18 header-btn bold-semi white`}>Go to GitHub</div>
+                                    <a href="https://github.com/orgs/Solar-network/repositories" target="_blank" rel="noreferrer" className={`${osBtn} black-btn fs-18 header-btn bold-semi white`}>Go to GitHub</a>
                                 </div>
                             </div>
                             <div><img src={developerImg} alt="developer"/></div>
@@ -128,7 +131,7 @@ const InstallSection = () => {
                 </div>
             </div>
         </div>
-
+        <ModalComp open = {show} setOpen = {setOpen}/>
     </section>
 }
 

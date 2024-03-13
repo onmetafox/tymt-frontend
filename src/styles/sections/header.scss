@@ -20,6 +20,7 @@
     background-image: linear-gradient(transparent, transparent), radial-gradient(circle at top left, rgba(255, 255, 255, 0.1) 1.69%, rgba(255, 255, 255, 0.4) 50.48%, rgba(255, 255, 255, 0.1) 98.31%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
+    backdrop-filter: blur(10px);
 }
 
 .header-container .dropdown-content{
@@ -46,17 +47,24 @@
 
 @media (max-width: 992px) {
     
+    .header-container.active{
+        border-radius: 16px 16px 0px 0px;
+        // background: rgb(75 73 73 / 86%);
+        backdrop-filter: blur(100px);
+        border-bottom: solid 1px wheat;
+    }
     .navbar-collapse {
         position: absolute;
         top: 100%;
         width: calc(100% + 2px);
         left: -1px;
-        background: #8080801A;
+        background: rgb(75 73 73 / 86%);
         padding: 0px 25px 24px;
         border-radius: 0px 0px 24px 24px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         border-top: none;
         text-align: center;
+        backdrop-filter: blur(100px);
     }
 
     .navbar-collapse>.nav-link{

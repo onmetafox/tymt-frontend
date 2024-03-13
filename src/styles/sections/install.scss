@@ -17,7 +17,7 @@
     border-radius: 16px;
     padding: 16px;
     border-color: #53E1F240;
-    
+    backdrop-filter: blur(10px);
 }
 .short-after{
     background-image:radial-gradient(farthest-corner at 100% 80%, rgba(83, 223, 243, 0.3) 25%, rgba(128, 128, 128, 0.1) 80%)
@@ -81,6 +81,7 @@
     border-radius: 16px;
     background: #8080801A;
     background-blend-mode: luminosity;
+    backdrop-filter: blur(10px);
 }
 .developer-container img, .publisher-container img{
     height: 128px;
