@@ -55,7 +55,7 @@ const InstallSection = () => {
             </div>
             <div className="d-flex flex-column p-tb-50" style={{gap:'20px'}}>
                 <div className="fs-48 italic white">How to install and play</div>
-                <div className="d-flex justify-content-between" style={{gap:'20px'}}>
+                <div className="step-pan">
                     <div className="step-container short-after">
                         <div className="fs-24 white">STEP 1</div>
                         <div className="fs-16 white-oppacity">Download and install the tymt launcher.</div>
@@ -69,7 +69,7 @@ const InstallSection = () => {
                         <div className="fs-16 white-oppacity">Make sure to secure and store your pass-phrase. Remember that in Web3 - your phrase is the ultimate key to restore your wallet.</div>
                     </div>
                 </div>
-                <div className="d-flex justify-content-between" style={{gap:'20px'}}>
+                <div className="step-pan">
                     <div className="step-container long-before">
                         <div className="fs-24 white">STEP 4</div>
                         <div className="fs-16 white-oppacity">Visit the Catalog for a list of available games. Currently tymt features District 53 - a voxel-based metaverse developed by tymt GAMES / Dokdo.</div>
