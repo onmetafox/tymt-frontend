@@ -1,4 +1,5 @@
 import { useState, useCallback, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { Modal } from "react-bootstrap";
 import closeIcon from "../assets/icons/close-icon.svg";
 import Form from 'react-bootstrap/Form';
@@ -74,10 +75,18 @@ const ModalComp = ({ open, setOpen }) => {
     const [osBtn, setOsBtn] = useState("common-btn-win");
     const [msg, setMsg] = useState("");
     const [os] = useState(OS(window));
+    const { t } = useTranslation();
+
     const handleClose = useCallback(()=>{
         setOpen(!open);
     },  [open, setOpen]);
-    
+
+    const options = [
+      {value:t("installation-technical-issue"), label:t("installation-technical-issue")},
+      {value:t("development-question"), label:t("development-question")},
+      {value:t("collaboration-question"), label:t("collaboration-question")},
+      {value:t("gerneral-inquiry"), label:t("gerneral-inquiry")}
+ ]
     useEffect(()=>{
         if(os==="Windows OS"){
             setOsBtn("common-btn-win");
@@ -89,7 +98,7 @@ const ModalComp = ({ open, setOpen }) => {
         <Modal show={open} onHide={handleClose} backdrop="static" keyboard={false} centered>
             <div className="modal-container">
                 <div className="d-flex justify-content-between align-items-center">
-                    <div className="fs-24 white">Contact Us</div>
+                    <div className="fs-24 white">{t("contact-us")}</div>
                     <div style={{cursor:"pointer"}} onClick={()=>setOpen(!open)}><img src={closeIcon} alt="close"/></div>
                 </div>
                 <Form.Control value={name} onChange={(e)=>setName(e.target.value)} placeholder="Name"/>
@@ -113,7 +122,7 @@ const ModalComp = ({ open, setOpen }) => {
                     
                 
                 <Form.Control as="textarea" rows={3} value={msg} onChange={(e)=>setMsg(e.target.value)} placeholder="Your message..."/>
-                <div className={`${osBtn} download-btn header-btn red-btn fs-18 bold-semi white`}>Submit</div>
+                <div className={`${osBtn} download-btn header-btn red-btn fs-18 bold-semi white`}>{t("submit")}</div>
             </div>
         </Modal>
     )

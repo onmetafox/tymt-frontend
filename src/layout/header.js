@@ -2,6 +2,7 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { isMobile } from 'react-device-detect';
+import { useTranslation } from "react-i18next";
 // import { Link } from 'react-router-dom';
 // import { useNavigate } from 'react-router-dom';
 
@@ -14,6 +15,8 @@ import DownloadComp from "../components/downloadComp";
 import ModalComp from '../components/modalComp';
 import { Link } from 'react-scroll';
 const Header = () => {
+    const { t } = useTranslation();
+    console.log(t);
     const [isOpen, setIsOpen] = useState(false);
     const [scroll, setScroll] = useState(false)
     const [osBtn, setOsBtn] = useState("common-btn-win");
@@ -62,15 +65,15 @@ const Header = () => {
                 </Navbar.Brand>
             
                 <Navbar.Collapse id="basic-navbar-nav" className='justify-content-end'>
-                        <Nav.Link as={Link}  to="home" smooth={true} duration={500} className='fs-16 white m-lr-10'>About</Nav.Link>
-                        <Nav.Link as={Link}  to="how-to-install" smooth={true} duration={500} className='fs-16 white m-lr-10'>How it Works</Nav.Link>
-                        <Nav.Link as={Link}  to="featured" smooth={true} duration={500} className='fs-16 white m-lr-10'>Publishers</Nav.Link>
+                        <Nav.Link as={Link}  to="home" smooth={true} duration={500} className='fs-16 white m-lr-10'>{t("header-about")}</Nav.Link>
+                        <Nav.Link as={Link}  to="how-to-install" smooth={true} duration={500} className='fs-16 white m-lr-10'>{t("how-it-works")}</Nav.Link>
+                        <Nav.Link as={Link}  to="featured" smooth={true} duration={500} className='fs-16 white m-lr-10'>{t("publishers")}</Nav.Link>
                         <Nav.Link onClick={()=>setShow(true)} style={{display: 'block'}} className={`${osBtn} black-btn fs-18 header-btn bold-semi white m-lr-10`}>
-                            Contact Us
+                            {t("contact-us")}
                         </Nav.Link>
                         {!isMobile && 
                             <Nav.Link as={Link}  to="/" style={{display: 'block'}} className={`${osBtn} download-btn header-btn red-btn fs-18 bold-semi white m-lr-10`}>
-                                Install and Play now
+                                {t("install-and-play-now")}
                                 <div className="dropdown-content">
                                     <DownloadComp />
                                 </div>

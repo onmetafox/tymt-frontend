@@ -8,7 +8,7 @@ import { BrowserRouter } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.css';
 import "./styles/app.scss"
 
-
+import "./local/i18n";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

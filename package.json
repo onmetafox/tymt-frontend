@@ -52,6 +52,8 @@
     ]
   },
   "devDependencies": {
+    "i18next": "^23.10.1",
+    "react-i18next": "^14.1.0",
     "sass": "^1.71.1"
   }
 }
