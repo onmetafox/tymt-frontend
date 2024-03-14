@@ -55,38 +55,28 @@ const InstallSection = () => {
             </div>
             <div className="d-flex flex-column p-tb-50" style={{gap:'20px'}}>
                 <div className="fs-48 italic white">How to install and play</div>
-                <div className="row justify-content-between gap-20">
-                    <div className="col-lg-2">
-                        <div className="step-container short-after">
-                            <div className="fs-24 white">STEP 1</div>
-                            <div className="fs-16 white-oppacity">Download and install the tymt launcher.</div>
-                        </div>
+                <div className="d-flex justify-content-between" style={{gap:'20px'}}>
+                    <div className="step-container short-after">
+                        <div className="fs-24 white">STEP 1</div>
+                        <div className="fs-16 white-oppacity">Download and install the tymt launcher.</div>
                     </div>
-                    <div className="col-lg-4">
-                        <div className="step-container short-after">
-                            <div className="fs-24 white">STEP 2</div>
-                            <div className="fs-16 white-oppacity">Create your account. If you have a Solar Wallet, or a Solar Card App - you can import your account as well!</div>
-                        </div>
+                    <div className="step-container short-after">
+                        <div className="fs-24 white">STEP 2</div>
+                        <div className="fs-16 white-oppacity">Create your account. If you have a Solar Wallet, or a Solar Card App - you can import your account as well!</div>
                     </div>
-                    <div className="col-lg-6">
-                        <div className="step-container long-after">
-                            <div className="fs-24 white">STEP 3</div>
-                            <div className="fs-16 white-oppacity">Make sure to secure and store your pass-phrase. Remember that in Web3 - your phrase is the ultimate key to restore your wallet.</div>
-                        </div>
+                    <div className="step-container long-after">
+                        <div className="fs-24 white">STEP 3</div>
+                        <div className="fs-16 white-oppacity">Make sure to secure and store your pass-phrase. Remember that in Web3 - your phrase is the ultimate key to restore your wallet.</div>
                     </div>
                 </div>
-                <div className="row justify-content-between gap-20">
-                    <div className="col-lg-7">
-                        <div className="step-container long-before">
-                            <div className="fs-24 white">STEP 4</div>
-                            <div className="fs-16 white-oppacity">Visit the Catalog for a list of available games. Currently tymt features District 53 - a voxel-based metaverse developed by tymt GAMES / Dokdo.</div>
-                        </div>
+                <div className="d-flex justify-content-between" style={{gap:'20px'}}>
+                    <div className="step-container long-before">
+                        <div className="fs-24 white">STEP 4</div>
+                        <div className="fs-16 white-oppacity">Visit the Catalog for a list of available games. Currently tymt features District 53 - a voxel-based metaverse developed by tymt GAMES / Dokdo.</div>
                     </div>
-                    <div className="col-lg-5">
-                        <div className="step-container short-before">
-                            <div className="fs-24 white">STEP 5</div>
-                            <div className="fs-16 white-oppacity">Join our social channels for community support, help and to meet new friends!</div>
-                        </div>
+                    <div className="step-container short-before">
+                        <div className="fs-24 white">STEP 5</div>
+                        <div className="fs-16 white-oppacity">Join our social channels for community support, help and to meet new friends!</div>
                     </div>
                 </div>
             </div>
