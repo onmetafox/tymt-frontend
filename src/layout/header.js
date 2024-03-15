@@ -95,7 +95,7 @@ const Header = () => {
                             Eng
                         </div>
                         <div onClick={()=>setLanguage("jp")} className={`${osBtn}  ${lang==="jp"?"active": ""} lang-btn fs-18 bold-semi gray m-lr-10`}>
-                            Jap
+                            {t("jap")}
                         </div>
                     </div>
                 </Nav.Link>

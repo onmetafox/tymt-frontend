@@ -62,12 +62,7 @@ const customStyles = {
     }),
     // You may also need to adjust other parts like indicatorsContainer, clearIndicator, etc.
 };
-const options = [
-     {value:"Installation/technical issue", label:"Installation/technical issue"},
-     {value:"Development question", label:"Development question"},
-     {value:"Collaboration question", label:"Collaboration question"},
-     {value:"Gerneral inquiry", label:"Gerneral inquiry"}
-]
+
 const ModalComp = ({ open, setOpen }) => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
