@@ -46,6 +46,9 @@
     "installation-technical-issue": "設置/技術的な問題",
     "development-question": "開発に関する質問",
     "collaboration-question": "コラボレーションに関する質問",
-    "gerneral-inquiry": "一般的なお問い合わせ"
+    "gerneral-inquiry": "一般的なお問い合わせ",
+    "download-for-linux": "Linux 用のダウンロード",
+    "download-for-windows": "Windows 用のダウンロード",
+    "download-for-mac" : "Mac用にダウンロード"
   }
 }

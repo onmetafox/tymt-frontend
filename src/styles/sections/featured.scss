@@ -17,13 +17,8 @@
     height: 50px;
     display: flex;
     text-align: center;
-    background: #8080801A;
-    background-blend-mode: luminosity;
-
-    border: double 1px transparent;
-    background-image: linear-gradient(#232323, #141212a1), radial-gradient(circle at top left, rgba(255, 255, 255, 0.1) 1.69%, rgba(255, 255, 255, 0.4) 50.48%, rgba(255, 255, 255, 0.1) 98.31%);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
+    border: 1px;
+    border-color: #FFFFFF4D;
 }
 .direct-53{
     padding: 20px;

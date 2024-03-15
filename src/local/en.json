@@ -46,6 +46,9 @@
     "installation-technical-issue": "Installation/technical issue",
     "development-question": "Development question",
     "collaboration-question": "Collaboration question",
-    "gerneral-inquiry": "Gerneral inquiry"
+    "gerneral-inquiry": "Gerneral inquiry",
+    "download-for-linux": "Download for Linux",
+    "download-for-windows": "Download for Windows",
+    "download-for-mac" : "Download for Mac"
   }
 }
