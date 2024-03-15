@@ -1,12 +1,17 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import circlePlugIcon from "../assets/icons/circle-plus-icon.svg";
 import DownloadComp from "../components/downloadComp";
 import { useTranslation } from "react-i18next";
 import { OS } from '../utils/getEnv';
+import ModalComp from "../components/modalComp";
 const FeaturedSection = () =>{
     const [os] = useState(OS(window));
     const [osBtn, setOsBtn] = useState("common-btn-win");
     const { t } = useTranslation();
+    const [show, setShow] = useState(false);
+    const setOpen = useCallback((status)=>{
+        setShow(status)
+    }, [setShow]);
     useEffect(()=>{
         if(os==="Windows OS"){
             setOsBtn("common-btn-win");
@@ -24,8 +29,8 @@ const FeaturedSection = () =>{
                 
             </div>
             <div className="col-lg-4 col-md-6 col-sm-12" style={{textAlign:"right"}}>
-                <div className={`${osBtn} download-btn fs-18 bold-semi white gray-btn  m-tb-10 gradient-border`} >
-                        <div className="d-flex align-item-center text-center" style={{gap: '10px'}}>
+                <div className={`${osBtn} download-btn fs-18 bold-semi white gray-btn  m-tb-10 gradient-border`} onClick={()=>{setShow(true); console.log("test")}} >
+                        <div className="d-flex align-item-center text-center" style={{gap: '10px'}} >
                             <span>{t("publish-your-game")}</span>
                             <img src={circlePlugIcon} alt ="circle plus"/>
                         </div>
@@ -57,6 +62,7 @@ const FeaturedSection = () =>{
                 </div>
             </div>
         </div>
+        <ModalComp open = {show} setOpen = {setOpen}/>
     </section>
 }
 export default FeaturedSection;

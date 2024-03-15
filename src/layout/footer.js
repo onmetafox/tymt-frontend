@@ -13,7 +13,7 @@ const Footer = () => {
                 <div className="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center align-items-center">
                     <Link to="home" smooth={true} duration={500} className='fs-16 white m-lr-10'>{t("header-about")}</Link>
                     <Link to="how-to-install" smooth={true} duration={500} className='fs-16 white m-lr-10'>{t("how-it-works")}</Link>
-                    <Link to="featured" smooth={true} duration={500} className='fs-16 white m-lr-10'>{t("publishers")}</Link>
+                    <Link to="publisher" smooth={true} duration={500} className='fs-16 white m-lr-10'>{t("publishers")}</Link>
                 </div>
                 <a className="col-lg-4 col-md-4 col-sm-12 content-center twitter-logo" href="https://twitter.com/SolarNetwork" target="_blank" rel="noreferrer">
                     <img src={twiterIcon} alt="twitter"/>

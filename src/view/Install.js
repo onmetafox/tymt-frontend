@@ -23,10 +23,10 @@ const InstallSection = () => {
             setOsBtn("common-btn-linux");
         }
     },[os]);
-    return <section id="how-to-install" className="install-section">
+    return <section  className="install-section">
         <div className="left-red-effect"><img src={leftEffectImg} alt="left effect" width={'100%'}/></div>
         <div className="container d-flex flex-column" style={{gap:'30px'}}>
-            <div className="launch-container">
+            <div className="launch-container" id="how-to-install">
                 <div className="row">
                     <div className="col-lg-6 col-md-6 col-sm-12">
                         <img src={launcherImg} width={'100%'} alt="launcher"/>
@@ -59,29 +59,29 @@ const InstallSection = () => {
                 <div className="step-pan">
                     <div className="step-container short-after">
                         <div className="fs-24 white">{t("step")} 1</div>
-                        <div className="fs-16 white-oppacity">{t("step-1-detail")}</div>
+                        <div className="fs-16 white">{t("step-1-detail")}</div>
                     </div>
                     <div className="step-container short-after">
                         <div className="fs-24 white">{t("step")} 2</div>
-                        <div className="fs-16 white-oppacity">{t("step-2-detail")}</div>
+                        <div className="fs-16 white">{t("step-2-detail")}</div>
                     </div>
                     <div className="step-container long-after">
                         <div className="fs-24 white">{t("step")} 3</div>
-                        <div className="fs-16 white-oppacity">{t("step-3-detail")}</div>
+                        <div className="fs-16 white">{t("step-3-detail")}</div>
                     </div>
                 </div>
                 <div className="step-pan">
                     <div className="step-container long-before">
                         <div className="fs-24 white">{t("step")} 4</div>
-                        <div className="fs-16 white-oppacity">{t("step-4-detail")}</div>
+                        <div className="fs-16 white">{t("step-4-detail")}</div>
                     </div>
                     <div className="step-container short-before">
                         <div className="fs-24 white">{t("step")} 5</div>
-                        <div className="fs-16 white-oppacity">{t("step-5-detail")}</div>
+                        <div className="fs-16 white">{t("step-5-detail")}</div>
                     </div>
                 </div>
             </div>
-            <div className="d-flex flex-column p-tb-50" style={{gap:'40px'}}>
+            <div className="d-flex flex-column p-tb-50" style={{gap:'40px'}} id="publisher">
                 <div className="row">
                     <div className="col-lg-6 col-md-6 col-sm-12">
                         <div className="fs-48 italic white" style={{lineHeight:1}}>
@@ -93,7 +93,7 @@ const InstallSection = () => {
                         <div className="fs-16 white">{t("publisher-detail")}</div>
                     </div>
                 </div>
-                <div className="row gap-20">
+                <div className="row gap-20" >
                     <div className="col-lg-6 col-sm-12">
                         <div className="publisher-container">
                             <div className="d-flex flex-column justify-content-between" style={{gap: "10px"}}>
