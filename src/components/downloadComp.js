@@ -21,7 +21,7 @@ const DownloadComp = () => {
         <div className={`download`}>
             <div className='download-item action-button'>
                 <a href='https://github.com/tymtltd/releases/releases/download/v0.1.0/tymt-launcher_0.1.0_amd64.AppImage' target='_blank' rel="noreferrer">
-                    <div className="d-flex justity-content-center align-items-center" style={{gap:"10px"}}>
+                    <div className="d-flex justity-content-center align-items-center">
                         <div><img src={linuxIcon} alt="linux download"/></div>
                         <div className={`${osBtn} fs-18 white`}>{t("download-for-linux")}</div>
                     </div>
@@ -30,7 +30,7 @@ const DownloadComp = () => {
             <div className='down-divider'></div>
             <div className='download-item action-button'>
                 <a href='https://github.com/tymtltd/releases/releases/download/v0.1.0/tymtLauncher_0.1.0_x64_en-US.msi' target='_blank' rel="noreferrer">
-                    <div className="d-flex justity-content-center align-items-center" style={{gap:"10px"}}>
+                    <div className="d-flex justity-content-center align-items-center">
                         <div><img src={winIcon} alt="win download"/></div>
                         <div className={`${osBtn} fs-18 white`}>{t("download-for-windows")}</div>
                     </div>
@@ -39,7 +39,7 @@ const DownloadComp = () => {
             <div className='down-divider'></div>
             <div className='download-item action-button'>
                 <a href='https://github.com/tymtltd/releases/releases/download/v0.1.0/tymtLauncher_0.1.0_x64_en-US.msi' target='_blank' rel="noreferrer">
-                    <div className="d-flex justity-content-center align-items-center" style={{gap:"10px"}}>
+                    <div className="d-flex justity-content-center align-items-center">
                         <div><img src={macIcon} alt="mac download"/></div>
                         <div className={`${osBtn} fs-18 white`}>{t("download-for-mac")}</div>
                     </div>

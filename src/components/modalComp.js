@@ -101,14 +101,14 @@ const ModalComp = ({ open, setOpen }) => {
                     <div className="fs-24 white">{t("contact-us")}</div>
                     <div style={{cursor:"pointer"}} onClick={()=>setOpen(!open)}><img src={closeIcon} alt="close"/></div>
                 </div>
-                <Form.Control value={name} onChange={(e)=>setName(e.target.value)} placeholder="Name"/>
-                <Form.Control type="email" value={email} onChange={(e)=>setEmail(e.target.value)} placeholder="Email"/>
+                <Form.Control value={name} onChange={(e)=>setName(e.target.value)} placeholder={t("name")}/>
+                <Form.Control type="email" value={email} onChange={(e)=>setEmail(e.target.value)} placeholder={t("email")}/>
                     <Select
                         value={subject}
                         onChange={(e)=>setSubject(e)}
                         styles={customStyles}
                         options={options}
-                        placeholder="Subject"
+                        placeholder={t("subject")}
                         theme={(theme) => ({
                         ...theme,
                             borderRadius: 8,
@@ -121,7 +121,7 @@ const ModalComp = ({ open, setOpen }) => {
                     />
                     
                 
-                <Form.Control as="textarea" rows={3} value={msg} onChange={(e)=>setMsg(e.target.value)} placeholder="Your message..."/>
+                <Form.Control as="textarea" rows={3} value={msg} onChange={(e)=>setMsg(e.target.value)} placeholder={t("your-message")}/>
                 <div className={`${osBtn} download-btn header-btn red-btn fs-18 bold-semi white`}>{t("submit")}</div>
             </div>
         </Modal>

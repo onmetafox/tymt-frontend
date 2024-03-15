@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux/es/hooks/useSelector';
 import 'swiper/css';
 
 import { OS } from '../utils/getEnv';
@@ -9,6 +10,7 @@ import DownloadComp from '../components/downloadComp';
 import {benefitsEn, benefitsJp} from '../config/benefits';
 import HeaderCard from '../components/headerCard';
 import redImg from "../assets/images/red-effect.png";
+import { getLang } from '../utils/languageSlice';
 function getCarousel () {
     const { innerWidth: width, innerHeight: height } = window;
     if( 768 < width && width <= 1200 && height){
@@ -24,15 +26,23 @@ const HomeSection = () => {
     const [os] = useState(OS(window));
     const [osBtn, setOsBtn] = useState("common-btn-win");
     const [carousel, setCarousel] = useState(false);
+    const [data, setData] = useState(benefitsEn);
     const [preview, setPreview] = useState();
     const {t} = useTranslation();
+    const lang = useSelector(getLang);
     useEffect(()=>{
+        
+        if(lang==="en"){
+            setData(benefitsEn);
+        }else{
+            setData(benefitsJp);
+        }
         if(os==="Windows OS"){
             setOsBtn("common-btn-win");
         }else{
             setOsBtn("common-btn-linux");
         }
-    },[os]);
+    },[os, lang]);
     useEffect(() => {
         const {carousel, preview} = getCarousel();
         setCarousel(carousel);
@@ -72,7 +82,7 @@ const HomeSection = () => {
                     </div>
                 </div>
                 <div className='row card-container'>
-                    {!carousel && benefitsEn.map((item, index)=> (
+                    {!carousel && data.map((item, index)=> (
                         <div className='col-3' key={index}>
                             <HeaderCard data={item} index = {index}/>
                         </div>
@@ -83,7 +93,7 @@ const HomeSection = () => {
             {carousel && (
                 <Swiper slidesPerView={preview} spaceBetween={30} centeredSlides={true} pagination={{ clickable: true, }} loop={true}>
                     {
-                        benefitsEn.map((item, index)=> (
+                        data.map((item, index)=> (
                             <SwiperSlide key={index}>
                                 <HeaderCard data={item} index = {index}/>
                             </SwiperSlide>

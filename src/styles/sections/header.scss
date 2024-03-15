@@ -44,6 +44,16 @@
     background-color: #7C7C7C33;
     border-radius: 8px;
 }
+.lang-btn.active{
+    background: #8080801A;
+    color: white;
+}
+.lang-btn{
+    &:hover{
+        background: #8080801A;
+        color: white;
+    }
+}
 
 @media (max-width: 992px) {
     
