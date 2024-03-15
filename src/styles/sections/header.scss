@@ -28,14 +28,15 @@
 }
 .header-container .download-btn:hover .dropdown-content {display: block;}
 .header-container .download {
-    background: #8080801A;
+    background: rgb(67 67 67 / 85%);
     background-blend-mode: luminosity;
     border-radius: 18px;
     padding: 16px 24px 16px 24px;
     position: absolute;
     text-align: right;
     top: 50px;
-    right: 0px;
+    left: 0px;
+    backdrop-filter: blur(100px);
 }
 .header-container .download-item >a> img {
     padding-top: 5px;

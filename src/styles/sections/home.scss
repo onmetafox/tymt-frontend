@@ -83,7 +83,7 @@
 }
 .home-section .download-btn:hover .dropdown-content {display: block;}
 .home-section .download {
-    background: #8080801A;
+    background: rgb(67 67 67 / 85%);
     background-blend-mode: luminosity;
     border-radius: 18px;
     padding: 16px 24px 16px 24px;
@@ -91,6 +91,8 @@
     text-align: right;
     top: 50px;
     left: 0px;
+    backdrop-filter: blur(10px);
+    z-index: 10;
 }
 .home-section .download-item >a> img {
     padding-top: 5px;

@@ -7,13 +7,13 @@ export const benefitsEn = [
     {
         icon: universalImg,
         title: "Universal Gaming",
-        detail: "Play on Windows, Linux macOS. Embrace the freedom of blockchain gaming.",
+        detail: "Play on Windows, Linux, macOS. Embrace the freedom of blockchain gaming.",
         gradient: 'red-gradient-smooth'
     },
     {
         icon: privacyImg,
         title: "Privacy & Security",
-        detail: "No personal data needed. Shop anonymously wuth confidence.",
+        detail: "No personal data needed. Shop anonymously with confidence.",
         gradient: 'purple-gradient-smooth'
     },
     {

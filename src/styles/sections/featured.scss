@@ -32,7 +32,7 @@
 }
 .featured-section .download-btn:hover .dropdown-content {display: block;}
 .featured-section .download {
-    background: #8080801A;
+    background: rgb(67 67 67 / 85%);
     background-blend-mode: luminosity;
     border-radius: 18px;
     padding: 16px 24px 16px 24px;
@@ -40,12 +40,13 @@
     text-align: right;
     top: 50px;
     left: 0px;
+    backdrop-filter: blur(10px);
 }
 .featured-section .download-item >a> img {
     padding-top: 5px;
 }
 .featured-section .download-item:hover {
-    background-color: #7C7C7C33;
+    background-color: #7C7C7C46;
     border-radius: 8px;
 }
 

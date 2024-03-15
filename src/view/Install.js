@@ -24,12 +24,12 @@ const InstallSection = () => {
         }
     },[os]);
     return <section  className="install-section">
-        <div className="left-red-effect"><img src={leftEffectImg} alt="left effect" width={'100%'}/></div>
+        <div className="left-red-effect"><img src={leftEffectImg} alt="left effect" width={'100%'} style={{borderRadius:'16px'}}/></div>
         <div className="container d-flex flex-column" style={{gap:'30px'}}>
             <div className="launch-container" id="how-to-install">
                 <div className="row">
                     <div className="col-lg-6 col-md-6 col-sm-12">
-                        <img src={launcherImg} width={'100%'} alt="launcher"/>
+                        <img src={launcherImg} width={'100%'} alt="launcher" style={{borderRadius:'16px'}}/>
                     </div>
                     <div className="col-lg-6 col-md-6 col-sm-12 p-30 d-flex flex-column justify-content-around">
                         <div style={{lineHeight:'35px'}}>
