@@ -4,6 +4,7 @@ import { Navbar, Nav } from 'react-bootstrap';
 import { isMobile } from 'react-device-detect';
 import { useTranslation } from "react-i18next";
 import { useSelector, useDispatch } from 'react-redux';
+import { Link as Href } from 'react-router-dom';
 import logo from "../assets/logos/logo.svg";
 import menuIcon from "../assets/icons/menu-icon.svg";
 import closeMenuIcon from "../assets/icons/cross-icon.svg"
@@ -66,7 +67,7 @@ const Header = () => {
 
     return (
         <Navbar variant="dark" expand="lg" className={`container header-container navbar-a ${isOpen ? 'active' : ''} ${scroll? 'scroll-header': ''}`} expanded = {isOpen}>
-            <Navbar.Brand as={Link} to="/">
+            <Navbar.Brand as={Href} to='/'>
                 <img
                     src={logo}
                     className="d-inline-block align-top header-logo"
