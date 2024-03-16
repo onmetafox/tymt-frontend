@@ -91,11 +91,11 @@ const Header = () => {
                     </Nav.Link>
                 }
                 <Nav.Link>
-                    <div className='d-flex justify-content-center align-items-senter'>
-                        <div onClick={()=>{setLanguage("en"); setIsOpen(false)}} className={`${osBtn} ${lang==="en"?"active": ""}  lang-btn fs-18 bold-semi gray m-lr-10`}>
+                    <div className='d-flex justify-content-center align-items-senter' style={{gap:'2px'}}>
+                        <div onClick={()=>{setLanguage("en"); setIsOpen(false)}} className={`${osBtn} ${lang==="en"?"active": ""}  lang-btn fs-18 bold-semi gray`}>
                             Eng
                         </div>
-                        <div onClick={()=>{setLanguage("jp"); setIsOpen(false)}} className={`${osBtn}  ${lang==="jp"?"active": ""} lang-btn fs-18 bold-semi gray m-lr-10`}>
+                        <div onClick={()=>{setLanguage("jp"); setIsOpen(false)}} className={`${osBtn}  ${lang==="jp"?"active": ""} lang-btn fs-18 bold-semi gray`}>
                             {/* {t("jap")} */}
                             日本
                         </div>
