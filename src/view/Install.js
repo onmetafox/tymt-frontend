@@ -32,7 +32,7 @@ const InstallSection = () => {
                     <div className="col-lg-6 col-md-6 col-sm-12">
                         <img src={launcherImg} width={'100%'} alt="launcher" style={{borderRadius:'16px'}}/>
                     </div>
-                    <div className="col-lg-6 col-md-6 col-sm-12 p-30 d-flex flex-column justify-content-around">
+                    <div className="col-lg-6 col-md-6 col-sm-12 p-30 d-flex flex-column justify-content-around" style={{gap:"30px"}}>
                         <div style={{lineHeight:'35px'}}>
                             <div className="fs-38 white">{t("your-launcher")}</div>
                             <div className="fs-38 red">{t("your-wallet")}</div>

@@ -25,7 +25,7 @@ export const benefitsEn = [
     {
         icon: openImg,
         title: "Open Platform",
-        detail: "Anyone can be a player, anyone can be a creator and publish games to tymt .",
+        detail: "Anyone can be a player, anyone can be a creator, and publish games to tymt .",
         gradient: 'yellow-gradient-smooth'
     }
 ]

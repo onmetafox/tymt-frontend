@@ -76,7 +76,7 @@ const Header = () => {
             </Navbar.Brand>
         
             <Navbar.Collapse id="basic-navbar-nav" className='justify-content-end'>
-                <Nav.Link as={Link} onClick={()=>setIsOpen(false)}  to="home" smooth={true} duration={500} className='fs-16 white m-lr-10'>{t("header-about")}</Nav.Link>
+                <Nav.Link as={Link} onClick={()=>setIsOpen(false)}  to="featured" smooth={true} duration={500} className='fs-16 white m-lr-10'>{t("header-about")}</Nav.Link>
                 <Nav.Link as={Link} onClick={()=>setIsOpen(false)} to="how-to-install" smooth={true} duration={500} className='fs-16 white m-lr-10'>{t("how-it-works")}</Nav.Link>
                 <Nav.Link as={Link} onClick={()=>setIsOpen(false)} to="publisher" smooth={true} duration={500} className='fs-16 white m-lr-10'>{t("publishers")}</Nav.Link>
                 <Nav.Link onClick={()=>{setShow(true); setIsOpen(false)}} style={{display: 'block'}} className={`${osBtn} black-btn fs-18 header-btn bold-semi white m-lr-10`}>
