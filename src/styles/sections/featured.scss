@@ -3,7 +3,7 @@
     z-index: 10;
 }
 .game-screen{
-    background-image: url("../../assets/images/game-lg.svg");
+    background-image: url("../../assets/images/game-lg.png");
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -53,7 +53,7 @@
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     .game-screen{
-        background-image: url("../../assets/images/game-lg.svg");
+        background-image: url("../../assets/images/game-lg.png");
         min-height: 240px;
     }
     .direct-53{
@@ -64,7 +64,7 @@
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
     .game-screen{
-        background-image: url("../../assets/images/game-lg.svg");
+        background-image: url("../../assets/images/game-lg.png");
         min-height: 280px;
     }
     .direct-53{
@@ -75,7 +75,7 @@
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
     .game-screen{
-        background-image: url("../../assets/images/game-sm.svg");
+        background-image: url("../../assets/images/game-sm.png");
         min-height: 470px
     }
    
@@ -85,7 +85,7 @@
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .game-screen{
-        background-image: url("../../assets/images/game-md.svg");
+        background-image: url("../../assets/images/game-md.png");
         min-height: 470px
     }
 }
@@ -93,7 +93,7 @@
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .game-screen{
-        background-image: url("../../assets/images/game-lg.svg");
+        background-image: url("../../assets/images/game-lg.png");
         min-height: 400px
     }
 }

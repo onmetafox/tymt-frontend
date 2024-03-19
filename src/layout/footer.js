@@ -24,8 +24,8 @@ const Footer = () => {
                     {t("right")}
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-12 d-flex content-center footer-terms">
-                    <a href = "https://solar.network/terms-and-conditions" target="_blank" rel="noreferrer"  className="fs-16 gray m-lr-10">{t("privacy")}</a>
-                    <a href = "https://solar.network/terms-and-conditions" target="_blank" rel="noreferrer" className="fs-16 gray">{t("terms")}</a>
+                    <a href = "https://solarenterprises.com/privacy-policy" target="_blank" rel="noreferrer"  className="fs-16 gray m-lr-10">{t("privacy")}</a>
+                    <a href = "https://solarenterprises.com/terms-and-conditions" target="_blank" rel="noreferrer" className="fs-16 gray">{t("terms")}</a>
                 </div>
             </div>
         </div>

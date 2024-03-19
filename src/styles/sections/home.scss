@@ -1,5 +1,5 @@
 .home-section{
-    // background-image: url("../../assets/images/macbook-lg.svg");
+    // background-image: url("../../assets/images/macbook-lg.png");
     background-image: radial-gradient(farthest-corner at  50% 0%, #53DFF35A 1%, transparent 50%);
     background-position: top;
     background-size: cover;
@@ -104,7 +104,7 @@
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     .mac-img{
-        background-image: url("../../assets/images/macbook-sm.svg");
+        background-image: url("../../assets/images/macbook-sm.png");
     }
     .header-card{
         padding: 10px;
@@ -114,28 +114,28 @@
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
     .mac-img{
-        background-image: url("../../assets/images/macbook-sm.svg");
+        background-image: url("../../assets/images/macbook-sm.png");
     }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
     .mac-img{
-        background-image: url("../../assets/images/macbook-md.svg");
+        background-image: url("../../assets/images/macbook-md.png");
     }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .mac-img{
-        background-image: url("../../assets/images/macbook-lg.svg");
+        background-image: url("../../assets/images/macbook-lg.png");
     }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .mac-img{
-        background-image: url("../../assets/images/macbook-xl.svg");
+        background-image: url("../../assets/images/macbook-xl.png");
     }
 }
 

@@ -30,13 +30,7 @@ const FeaturedSection = () =>{
                 
             </div>
             <div className="col-lg-4 col-md-6 col-sm-12" style={{textAlign:"right"}}>
-                <div className={`${osBtn} download-btn fs-18 bold-semi white gray-btn  m-tb-10 gradient-border`} onClick={()=>setShow(true)} >
-                        <div className="d-flex align-item-center text-center" style={{gap: '10px'}} >
-                            <span>{t("publish-your-game")}</span>
-                            <img src={circlePlugIcon} alt ="circle plus"/>
-                        </div>
-                    </div>
-                </div>
+            </div>
         </div>
         <div className="row">
             <div className="col-lg-8 col-md-6 col-sm-12">

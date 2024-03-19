@@ -113,7 +113,7 @@ const InstallSection = () => {
                                 <div className="fs-24 white">{t("if-you-are-a-developer")}</div>
                                 <div className="fs-16 white">{t("developer-contact")}</div>
                                 <div>
-                                    <a href="https://github.com/orgs/Solar-network/repositories" target="_blank" rel="noreferrer" className={`${osBtn} black-btn fs-18 header-btn bold-semi white`}>{t("go-to-github")}</a>
+                                    <a href="https://github.com/dokdo-sh" target="_blank" rel="noreferrer" className={`${osBtn} black-btn fs-18 header-btn bold-semi white`}>{t("go-to-github")}</a>
                                 </div>
                             </div>
                             <div><img src={developerImg} alt="developer"/></div>
