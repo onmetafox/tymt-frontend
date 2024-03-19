@@ -4,6 +4,7 @@ import DownloadComp from "../components/downloadComp";
 import { useTranslation } from "react-i18next";
 import { OS } from '../utils/getEnv';
 import ModalComp from "../components/modalComp";
+import { replaceStr } from "../utils/helper";
 const FeaturedSection = () =>{
     const [os] = useState(OS(window));
     const [osBtn, setOsBtn] = useState("common-btn-win");
@@ -25,7 +26,7 @@ const FeaturedSection = () =>{
         </div>
         <div className="row">
             <div className="col-lg-8 col-md-6 col-sm-12">
-                <div className="fs-16 white  m-tb-10">{t("featured-detail")}</div>
+                <div className="fs-16 white  m-tb-10">{replaceStr(t("featured-detail"))}</div>
                 
             </div>
             <div className="col-lg-4 col-md-6 col-sm-12" style={{textAlign:"right"}}>

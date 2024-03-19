@@ -8,6 +8,7 @@ import developerImg from "../assets/images/developer.svg";
 import DownloadComp from "../components/downloadComp";
 import leftEffectImg from "../assets/images/left-red-effect.png";
 import ModalComp from "../components/modalComp";
+import { replaceStr } from "../utils/helper";
 const InstallSection = () => {
     const [os] = useState(OS(window));
     const [osBtn, setOsBtn] = useState("common-btn-win");
@@ -39,7 +40,7 @@ const InstallSection = () => {
                         <div className="fs-16 white">
                             {t("wallet-detail-1")}
                             <a href="https://solar.org/wallets" target="_blank" rel="noreferrer" className="blue">{t("crypto-wallet")}</a>. 
-                            &nbsp;{t("wallet-detail-2")}
+                            &nbsp;{replaceStr(t("wallet-detail-2"))}
                         </div>
                         {!isMobile && 
                             <div>
@@ -59,7 +60,7 @@ const InstallSection = () => {
                 <div className="step-pan">
                     <div className="step-container short-after">
                         <div className="fs-24 white">{t("step")} 1</div>
-                        <div className="fs-16 white">{t("step-1-detail")}</div>
+                        <div className="fs-16 white">{replaceStr(t("step-1-detail"))}</div>
                     </div>
                     <div className="step-container short-after">
                         <div className="fs-24 white">{t("step")} 2</div>
@@ -73,7 +74,7 @@ const InstallSection = () => {
                 <div className="step-pan">
                     <div className="step-container long-before">
                         <div className="fs-24 white">{t("step")} 4</div>
-                        <div className="fs-16 white">{t("step-4-detail")}</div>
+                        <div className="fs-16 white">{replaceStr(t("step-4-detail"))}</div>
                     </div>
                     <div className="step-container short-before">
                         <div className="fs-24 white">{t("step")} 5</div>
@@ -90,7 +91,7 @@ const InstallSection = () => {
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-6 col-sm-12 d-flex align-items-end">
-                        <div className="fs-16 white">{t("publisher-detail")}</div>
+                        <div className="fs-16 white">{replaceStr(t("publisher-detail"))}</div>
                     </div>
                 </div>
                 <div className="row gap-20" >

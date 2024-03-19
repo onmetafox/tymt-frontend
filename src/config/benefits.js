@@ -25,7 +25,7 @@ export const benefitsEn = [
     {
         icon: openImg,
         title: "Open Platform",
-        detail: "Anyone can be a player, anyone can be a creator and publish games to tymt.",
+        detail: "Anyone can be a player, anyone can be a creator and publish games to tymt .",
         gradient: 'yellow-gradient-smooth'
     }
 ]
@@ -34,7 +34,7 @@ export const benefitsJp = [
     {
         icon: universalImg,
         title: "ユニバーサルゲーミング",
-        detail: "Windows、Linux macOS でプレイできます。ブロックチェーン ゲームの自由を受け入れましょう。",
+        detail: "Windows、Linux、 macOS でプレイできます。ブロックチェーン ゲームの自由を受け入れましょう。",
         gradient: 'red-gradient-smooth'
     },
     {

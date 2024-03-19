@@ -8,6 +8,7 @@ import { OS } from '../utils/getEnv';
 import { isMobile } from 'react-device-detect';
 import DownloadComp from '../components/downloadComp';
 import {benefitsEn, benefitsJp} from '../config/benefits';
+import { replaceStr } from '../utils/helper';
 import HeaderCard from '../components/headerCard';
 import redImg from "../assets/images/red-effect.png";
 import { getLang } from '../utils/languageSlice';
@@ -69,7 +70,7 @@ const HomeSection = () => {
                             <div className='fs-96 bold italic white nowrap'>{t("gaming")}!</div> 
                         </div>
                         <div className='fs-20 white m-tb-20' style={{maxWidth: '550px'}}>
-                            {t("home-detail")}
+                            {replaceStr(t("home-detail"))}
                         </div>
                         {!isMobile && 
                             <div className={`${osBtn} download-btn red-btn fs-18 bold-semi white`}>
