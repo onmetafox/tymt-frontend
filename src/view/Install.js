@@ -30,7 +30,7 @@ const InstallSection = () => {
             <div className="launch-container" id="how-to-install">
                 <div className="row">
                     <div className="col-lg-6 col-md-6 col-sm-12">
-                        <img src={launcherImg} width={'100%'} alt="launcher" style={{borderRadius:'16px'}}/>
+                        <img src={launcherImg} width={'100%'} alt="launcher" style={{borderRadius:'16px', opacity:0.6}}/>
                     </div>
                     <div className="col-lg-6 col-md-6 col-sm-12 p-30 d-flex flex-column justify-content-around" style={{gap:"30px"}}>
                         <div style={{lineHeight:'35px'}}>
