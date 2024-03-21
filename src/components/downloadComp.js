@@ -38,7 +38,7 @@ const DownloadComp = () => {
             </div>
             <div className='down-divider'></div>
             <div className='download-item action-button'>
-                <a href='https://github.com/tymtltd/releases/releases/download/v0.1.0/tymtLauncher_0.1.0_x64_en-US.msi' target='_blank' rel="noreferrer">
+                <a href='https://github.com/tymtltd/releases/releases/download/v0.2.0/tymtLauncher_0.2.0_x64.dmg' target='_blank' rel="noreferrer">
                     <div className="d-flex justity-content-center align-items-center">
                         <div><img src={macIcon} alt="mac download"/></div>
                         <div className={`${osBtn} fs-18 white`}>{t("download-for-mac")}</div>

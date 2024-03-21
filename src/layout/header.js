@@ -83,12 +83,12 @@ const Header = () => {
                     {t("contact-us")}
                 </Nav.Link>
                 {!isMobile && 
-                    <Nav.Link as={Link}  onClick={()=>setIsOpen(false)} to="/" style={{display: 'block'}} className={`${osBtn} download-btn header-btn red-btn fs-18 bold-semi white m-lr-10`}>
+                    <div onClick={()=>setIsOpen(false)} style={{display: 'block'}} className={`${osBtn} download-btn header-btn red-btn fs-18 bold-semi white m-lr-10`}>
                         {t("install-and-play-now")}
                         <div className="dropdown-content">
                             <DownloadComp />
                         </div>
-                    </Nav.Link>
+                    </div>
                 }
                 <Nav.Link>
                     <div className='d-flex justify-content-center align-items-senter' style={{gap:'2px'}}>
