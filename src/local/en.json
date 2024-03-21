@@ -30,9 +30,9 @@
     "for-publishers": "For publishers",
     "and-developers": "and developers",
     "publisher-detail": "Our mission is to bridge, connect and empower Gamers, Developers and Game Publishers - we think in terms of Community, rather than Competition. If you want to reach a new community of potential gamers - publish your game on tymt !",
-    "if-you-are-a-publisher": "If you are a Publisher.",
+    "if-you-are-a-publisher": "If you are a Publisher",
     "publisher-contact": "Simply contact us and publish your game",
-    "if-you-are-a-developer": "If you are a Developer.",
+    "if-you-are-a-developer": "If you are a Developer",
     "developer-contact": "Visit our GitHub repository for all documentation and SDK",
     "go-to-github": "Go to GitHub",
     "right": "©2024. All rights reserved.",
@@ -49,7 +49,7 @@
     "gerneral-inquiry": "General inquiry",
     "download-for-linux": "Download for Linux",
     "download-for-windows": "Download for Windows",
-    "download-for-mac" : "Download for Mac",
+    "download-for-mac" : "Download for macOS",
     "jap": "Jap"
   }
 }
