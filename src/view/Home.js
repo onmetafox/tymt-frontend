@@ -1,8 +1,12 @@
 import React, {useEffect, useState} from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux/es/hooks/useSelector';
 import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 import { OS } from '../utils/getEnv';
 import { isMobile } from 'react-device-detect';
@@ -92,7 +96,7 @@ const HomeSection = () => {
                 </div>
             </div>
             {carousel && (
-                <Swiper slidesPerView={preview} spaceBetween={30} centeredSlides={true} pagination={{ clickable: true, }} loop={true}>
+                <Swiper modules={[Navigation, Pagination, Scrollbar, A11y]} navigation slidesPerView={preview} spaceBetween={30} centeredSlides={true} pagination={{ clickable: true, }} loop={true}>
                     {
                         data.map((item, index)=> (
                             <SwiperSlide key={index}>

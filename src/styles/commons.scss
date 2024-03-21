@@ -30,6 +30,13 @@ body{
 //   ::-webkit-scrollbar-thumb:hover {
 //     background: #111;
 //   }
+.swiper-button-prev, .swiper-button-next {
+    color: gray;
+}
+.swiper-pagination-bullet-active {
+    background: gray;
+}
+
 .common-btn-win{
     padding: 10px 18px 13px 18px;
     border-radius: 16px;
