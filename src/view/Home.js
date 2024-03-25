@@ -66,12 +66,23 @@ const HomeSection = () => {
             <div className='container flex-colum' style={{position:'relative', zIndex:10}}>
                 <div className='row detail-container'>
                     <div className='col-12'>
-                        <div className='description'>
-                            <div className='fs-96 bold italic white nowrap'>{t("welcome-to")}</div> 
-                            <span className='fs-96 bold italic blue nowrap'>{t("the-future")}</span>
-                            <span className='fs-96 bold italic white nowrap'> {t("of")}</span>
-                            <div className='fs-96 bold italic white nowrap'>{t("gaming")}!</div> 
-                        </div>
+                        {lang === "en" &&(
+                            <div className='description'>
+                                <div className='fs-96 bold italic white nowrap'>{t("welcome-to")}</div> 
+                                <span className='fs-96 bold italic blue nowrap'>{t("the-future")}</span>
+                                <span className='fs-96 bold italic white nowrap'> {t("of")}</span>
+                                <div className='fs-96 bold italic white nowrap'>{t("gaming")}!</div> 
+                            </div>
+                        )}
+                        {lang === "jp" &&(
+                            <div className='description'>
+                                <div className='fs-96 bold italic white nowrap'>{t("welcome-to")}</div> 
+                                <span className='fs-96 bold italic white nowrap'>{t("the-future")}</span>
+                                <span className='fs-96 bold italic white nowrap'> {t("of")}</span>
+                                <div className='fs-96 bold italic white nowrap'><span className='blue'>{t("gaming")}</span>!</div> 
+                            </div>
+                        )}
+                        
                         <div className='fs-20 white m-tb-20' style={{maxWidth: '550px'}}>
                             {replaceStr(t("home-detail"))}
                         </div>
