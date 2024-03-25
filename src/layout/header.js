@@ -43,12 +43,13 @@ const Header = () => {
     },[lang, changeLanguage, dispatch]);
 
     useEffect(()=>{
+        changeLanguage(lang)
         if(os==="Windows OS"){
             setOsBtn("common-btn-win");
         }else{
             setOsBtn("common-btn-linux");
         }
-    },[os]);
+    },[os, lang]);
 
     useEffect(() => {
         const handleScroll = () => {

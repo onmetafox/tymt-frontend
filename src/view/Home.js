@@ -36,7 +36,6 @@ const HomeSection = () => {
     const {t} = useTranslation();
     const lang = useSelector(getLang);
     useEffect(()=>{
-        
         if(lang==="en"){
             setData(benefitsEn);
         }else{
