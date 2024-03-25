@@ -34,25 +34,25 @@ export const benefitsJp = [
     {
         icon: universalImg,
         title: "ユニバーサルゲーミング",
-        detail: "Windows、Linux、 macOS でプレイできます。ブロックチェーン ゲームの自由を受け入れましょう。",
+        detail: "Windows、Linux、macOSでプレイ。ブロックチェーンゲームの自由をその手に！",
         gradient: 'red-gradient-smooth'
     },
     {
         icon: privacyImg,
         title: "プライバシーとセキュリティ",
-        detail: "個人データは必要ありません。匿名で安心して買い物ができます。",
+        detail: "個人情報は必要ありません。匿名で安心してお買い物ができます。",
         gradient: 'purple-gradient-smooth'
     },
     {
         icon: blockchainImg,
-        title:"ブロックチェーンの力",
-        detail: "1 つのランチャーから 1 つのプラットフォームでブロックチェーン ゲームと従来のゲームをプレイできます。",
+        title:"ブロックチェーンパワー",
+        detail: "ブロックチェーンと従来のゲームを1つのプラットフォームで、1つのランチャーからプレイ可能",
         gradient: 'blue-gradient-smooth'
     },
     {
         icon: openImg,
         title: "オープンプラットフォーム",
-        detail: "誰でもプレイヤーになることができ、誰でもクリエイターになって tymt にゲームを公開することができます。",
+        detail: "誰もがプレイヤーになれ、また誰もがゲームをtymt™に公開してクリエイターにもなれます。",
         gradient: 'yellow-gradient-smooth'
     }
 ]
